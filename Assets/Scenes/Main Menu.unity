@@ -391,7 +391,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &89136226
 RectTransform:
   m_ObjectHideFlags: 0
@@ -497,7 +497,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 192600619}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 335696647}
+        m_TargetAssemblyTypeName: MedicalMenu, Assembly-CSharp
+        m_MethodName: medicalGame2Select
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &192600619
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -788,6 +800,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 238388895}
+  - component: {fileID: 238388896}
   m_Layer: 5
   m_Name: Feminist Game Select
   m_TagString: Untagged
@@ -820,6 +833,21 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &238388896
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 238388894}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e24ddb9593fe5214a93b4a7f5c5960da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  feministGameName1: 
+  feministGameName2: 
+  feministGameName3: 
 --- !u!1 &289070115
 GameObject:
   m_ObjectHideFlags: 0
@@ -965,13 +993,14 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 335696646}
+  - component: {fileID: 335696647}
   m_Layer: 5
   m_Name: Medical Game Select
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &335696646
 RectTransform:
   m_ObjectHideFlags: 0
@@ -997,6 +1026,21 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &335696647
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 335696645}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3c26d6508b31c2a47b2b1aa3f075a80c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  medicalGameName1: 
+  medicalGameName2: 
+  medicalGameName3: 
 --- !u!1 &394621627
 GameObject:
   m_ObjectHideFlags: 0
@@ -2290,6 +2334,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3cdcdd4626a9ec345b2e9243a999d695, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ladyGameName1: Lady Game 1
+  ladyGameName2: Lady Game 2
+  ladyGameName3: Lady Game 3
 --- !u!1 &789299979
 GameObject:
   m_ObjectHideFlags: 0
@@ -2723,7 +2770,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 841696416}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 335696647}
+        m_TargetAssemblyTypeName: MedicalMenu, Assembly-CSharp
+        m_MethodName: medicalGame3Select
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &841696416
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3660,7 +3719,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1051294470}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 335696647}
+        m_TargetAssemblyTypeName: MedicalMenu, Assembly-CSharp
+        m_MethodName: medicalGame1Select
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1051294470
 MonoBehaviour:
   m_ObjectHideFlags: 0
