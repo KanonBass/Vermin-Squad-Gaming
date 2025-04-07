@@ -87,7 +87,7 @@ public class CrowdMovingScript : MonoBehaviour
         {
             if (i <= currentMembers)
             {
-                crowdArray[i].SetDestination(new Vector3(startTransform.position.x - 1 * (xCrowdOffset*(i%crowdColumnLimit)), startTransform.position.y, startTransform.position.z - 1 * (zCrowdOffset*(i/crowdColumnLimit)%crowdRowLimit)));
+                crowdArray[i].SetDestination(new Vector3(startTransform.position.x - 1 * (xCrowdOffset*(i%crowdColumnLimit)), startTransform.position.y, startTransform.position.z + 1 * (zCrowdOffset*(Mathf.Floor(i/crowdColumnLimit))))); 
             }
             else
             {

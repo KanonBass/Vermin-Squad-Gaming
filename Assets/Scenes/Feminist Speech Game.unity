@@ -729,10 +729,10 @@ MonoBehaviour:
   leftPointObject: {fileID: 276459193}
   rightPointObject: {fileID: 812497864}
   startPointObject: {fileID: 142047724}
-  crowdRowLimit: 4
-  crowdColumnLimit: 5
-  xCrowdOffset: 2
-  zCrowdOffset: 2
+  crowdRowLimit: 10
+  crowdColumnLimit: 6
+  xCrowdOffset: 3
+  zCrowdOffset: 1
   pointTracker: {fileID: 1161828030}
 --- !u!1 &381752042
 GameObject:
