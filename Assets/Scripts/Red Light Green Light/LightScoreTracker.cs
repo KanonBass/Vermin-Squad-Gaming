@@ -14,7 +14,7 @@ public class LightScoreScript : ScoreTracker
         {
             UpdateScore(Time.deltaTime);
         }
-        else
+        else if(GetScore() > GetMinScore()) 
         {
             UpdateScore(-Time.deltaTime);
         }

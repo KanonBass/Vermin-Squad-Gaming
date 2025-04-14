@@ -6,6 +6,7 @@ public class ScoreTracker : MonoBehaviour
 {
     [SerializeField] private float startScore = 0;
     [SerializeField] private float maxScore = 100;
+    [SerializeField] private float minScore = 0;
     private float score;
    
 
@@ -36,5 +37,10 @@ public class ScoreTracker : MonoBehaviour
     public float GetMaxScore()
     {
         return maxScore;
+    }
+
+    public float GetMinScore()
+    {
+        return minScore;
     }
 }

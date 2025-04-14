@@ -27,6 +27,5 @@ public class RedLightInput : MonoBehaviour
     private void Released(InputAction.CallbackContext obj)
     {
         Release.Invoke(false);
-        
     }
 }
