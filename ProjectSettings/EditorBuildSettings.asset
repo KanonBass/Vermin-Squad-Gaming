@@ -17,6 +17,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Lady Game 2.unity
     guid: 5d1bbe28a62e3bc4f8b2c50f62bec4ef
+  - enabled: 1
+    path: Assets/Scenes/Feminist Speech Game.unity
+    guid: ecafca5df5852fb4bb12a791c5e99d79
+  - enabled: 1
+    path: Assets/Scenes/Medical Medication Game.unity
+    guid: 60dc3505e706039408bc3e2a8515609d
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
   m_UseUCBPForAssetBundles: 0
