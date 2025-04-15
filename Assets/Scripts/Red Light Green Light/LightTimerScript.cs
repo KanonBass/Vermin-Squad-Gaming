@@ -18,8 +18,6 @@ public class LightTimerScript : MonoBehaviour
     public UnityEvent<bool> StateChange;
     public UnityEvent GracePeriodEnd;
 
-    private bool graceEnded = false;
-
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -42,13 +40,11 @@ public class LightTimerScript : MonoBehaviour
             if (currentTime > gracePeriod && isRed)
             {
                 GracePeriodEnd.Invoke();
-                graceEnded = true;
             }
         }
         else
         {
             isRed = !isRed;
-            graceEnded = false;
             currentTime = 0;
             maxTime = RandomRedTimer(redTimerMax, redTimerMin) * System.Convert.ToSingle(isRed) + RandomGreenTimer(greenTimerMax, greenTimerMin) * System.Convert.ToSingle(!isRed);
             Debug.Log("isRed changed to: " + isRed + " new time is: " + maxTime);

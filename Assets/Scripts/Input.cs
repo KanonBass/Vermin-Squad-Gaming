@@ -10,9 +10,6 @@ public class RedLightInput : MonoBehaviour
     public UnityEvent<bool> Press;
     public UnityEvent<bool> Release;
 
-    private bool pressState = false;
-
-
     void Start()
     {
         action = InputSystem.actions.FindAction("Book Reading");
@@ -23,13 +20,11 @@ public class RedLightInput : MonoBehaviour
     private void Pressed(InputAction.CallbackContext obj)
     {
         Press.Invoke(true);
-        pressState = true;
     }
 
     private void Released(InputAction.CallbackContext obj)
     {
         Release.Invoke(false);
-        pressState = false;
     }
 
     public void AddListener(GameObject newObject)
