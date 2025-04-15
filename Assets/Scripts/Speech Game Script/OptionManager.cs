@@ -14,9 +14,10 @@ public class OptionManager : MonoBehaviour
     public int currentOption;
     
 
-   // public GameObject GamePanel;
-   // public GameObject GoPanel;
+   public GameObject GamePanel;
+   public GameObject WinPanel;
 
+    
     public TextMeshProUGUI OptionTxt;
     public TextMeshProUGUI ScoreTxt;
     public ScoreTracker scoreTracker;
@@ -26,19 +27,20 @@ public class OptionManager : MonoBehaviour
     private void Start()
     {
 
-       // GoPanel.SetActive(false);
+           WinPanel.SetActive(false);
            generateOption();
     }
 
-   /* public void SwitchGame()
+   
+    public void Retry()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
-    } */ 
-
+       SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+   }
+   
     void GameOver()
     {
-        //GamePanel.SetActive(false);
-        //GoPanel.SetActive(true);
+       GamePanel.SetActive(false);
+        WinPanel.SetActive(true);
 
     }
     public void correct()
