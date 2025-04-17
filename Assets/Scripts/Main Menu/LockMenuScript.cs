@@ -25,7 +25,6 @@ public class LockMenuScript : MonoBehaviour
     public void CancelButton()
     {
         gameObject.SetActive(false);
-        previousMenuObj = EditorUtility.InstanceIDToObject(PlayerPrefs.GetInt("previousMenu"));
         ((GameObject)previousMenuObj).SetActive(true);
     }
 
@@ -44,7 +43,6 @@ public class LockMenuScript : MonoBehaviour
     {
         PlayerPrefs.SetString(key, pin);
         gameObject.SetActive(false);
-        previousMenuObj = EditorUtility.InstanceIDToObject(PlayerPrefs.GetInt("previousMenu"));
         ((GameObject)previousMenuObj).SetActive(true);
 
         Debug.Log("This is the pin that was stored: " + pin);
