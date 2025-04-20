@@ -1408,7 +1408,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 238388895}
-  - component: {fileID: 238388896}
   - component: {fileID: 238388897}
   m_Layer: 5
   m_Name: Feminist Game Select
@@ -1443,21 +1442,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &238388896
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 238388894}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e24ddb9593fe5214a93b4a7f5c5960da, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  feministGameName1: 
-  feministGameName2: 
-  feministGameName3: 
 --- !u!114 &238388897
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2159,7 +2143,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 335696646}
-  - component: {fileID: 335696647}
   - component: {fileID: 335696648}
   m_Layer: 5
   m_Name: Medical Game Select
@@ -2194,21 +2177,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &335696647
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 335696645}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3c26d6508b31c2a47b2b1aa3f075a80c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  medicalGameName1: 
-  medicalGameName2: 
-  medicalGameName3: 
 --- !u!114 &335696648
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4277,7 +4245,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 785698491}
-  - component: {fileID: 785698492}
   - component: {fileID: 785698493}
   m_Layer: 5
   m_Name: Lady Game Select
@@ -4312,21 +4279,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &785698492
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 785698490}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3cdcdd4626a9ec345b2e9243a999d695, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ladyGameName1: Lady Game 1
-  ladyGameName2: Lady Game 2
-  ladyGameName3: Lady Game 3
 --- !u!114 &785698493
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6018,10 +5970,10 @@ MonoBehaviour:
       - m_Target: {fileID: 15293532}
         m_TargetAssemblyTypeName: GameSceneManager, Assembly-CSharp
         m_MethodName: ChangeScene
-        m_Mode: 5
+        m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_ObjectArgument: {fileID: 102900000, guid: 60dc3505e706039408bc3e2a8515609d, type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEditor.SceneAsset, UnityEditor.CoreModule
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: Medical Medication Game
@@ -9470,10 +9422,10 @@ MonoBehaviour:
       - m_Target: {fileID: 15293532}
         m_TargetAssemblyTypeName: GameSceneManager, Assembly-CSharp
         m_MethodName: ChangeScene
-        m_Mode: 5
+        m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_ObjectArgument: {fileID: 102900000, guid: ecafca5df5852fb4bb12a791c5e99d79, type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEditor.SceneAsset, UnityEditor.CoreModule
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: Feminist Speech Game
@@ -10289,10 +10241,10 @@ MonoBehaviour:
       - m_Target: {fileID: 15293532}
         m_TargetAssemblyTypeName: GameSceneManager, Assembly-CSharp
         m_MethodName: ChangeScene
-        m_Mode: 5
+        m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_ObjectArgument: {fileID: 102900000, guid: 99c9720ab356a0642a771bea13969a05, type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEditor.SceneAsset, UnityEditor.CoreModule
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: Lady Red light game
