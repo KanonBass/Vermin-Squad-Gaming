@@ -21,7 +21,7 @@ public class ThrowScript : MonoBehaviour
         GetComponent<Rigidbody>().mass *= gravityMultiplier;
     }
 
-    // Update is called once per frame
+
     void Update()
     {
         if (timer > timerMax)

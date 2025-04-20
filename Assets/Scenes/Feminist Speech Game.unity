@@ -414,7 +414,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 6.1, y: 130}
+  m_AnchoredPosition: {x: 6.1, y: 400}
   m_SizeDelta: {x: 200, y: 200}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &312541582
@@ -540,7 +540,7 @@ MonoBehaviour:
   optionSelected:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1161828031}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: ScoreTracker, Assembly-CSharp
         m_MethodName: UpdateScore
         m_Mode: 0
@@ -623,7 +623,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 373.4, y: 130}
+  m_AnchoredPosition: {x: 750, y: 400}
   m_SizeDelta: {x: 200, y: 200}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &365630862
@@ -643,7 +643,7 @@ MonoBehaviour:
   optionSelected:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1161828031}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: ScoreTracker, Assembly-CSharp
         m_MethodName: UpdateScore
         m_Mode: 0
@@ -780,8 +780,8 @@ MonoBehaviour:
   startPointObject: {fileID: 142047724}
   crowdRowLimit: 10
   crowdColumnLimit: 6
-  xCrowdOffset: 3
-  zCrowdOffset: 1
+  crowdColumnOffset: 2
+  crowdRowOffset: 2
   pointTracker: {fileID: 1161828030}
 --- !u!1 &381752042
 GameObject:
@@ -831,10 +831,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
+  m_ReferenceResolution: {x: 1920, y: 1080}
   m_ScreenMatchMode: 0
   m_MatchWidthOrHeight: 0
   m_PhysicalUnit: 3
@@ -1198,7 +1198,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 389, y: -183}
+  m_AnchoredPosition: {x: 765, y: -183}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &689305132
@@ -1381,21 +1381,21 @@ MonoBehaviour:
     - {fileID: 21300000, guid: 272eb4cdefbdc604f9dbea18ce92819c, type: 3}
     - {fileID: 21300000, guid: e009f5e0f34a61747b01a21671448562, type: 3}
     CorrectOption: 1
-    score: 2
+    score: 5
   - Option: Pick an option 2
     Answers:
     - {fileID: 21300000, guid: a614176f04400194e834cc2ae99f51a4, type: 3}
     - {fileID: 21300000, guid: 04957fe2ce99e6c4ea8c98f86be340c0, type: 3}
     - {fileID: 21300000, guid: dbd1054ba065be14999096e959fbd020, type: 3}
     CorrectOption: 2
-    score: 2
+    score: 5
   - Option: Pick an option 3
     Answers:
     - {fileID: 21300000, guid: 4c657b4ecb80eea4cbf4c293a7b981f4, type: 3}
     - {fileID: 21300000, guid: 3c024662578f16045975bbc645d857b6, type: 3}
     - {fileID: 21300000, guid: 8f72b251f88687e42a5c1d173cd467fc, type: 3}
     CorrectOption: 3
-    score: 2
+    score: 5
   options:
   - {fileID: 1632603021}
   - {fileID: 312541580}
@@ -1552,7 +1552,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -384, y: -34}
+  m_AnchoredPosition: {x: -759, y: -183}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1135655072
@@ -1604,6 +1604,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startScore: 75
   maxScore: 100
+  minScore: 0
 --- !u!4 &1161828032
 Transform:
   m_ObjectHideFlags: 0
@@ -2168,7 +2169,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -375, y: 130}
+  m_AnchoredPosition: {x: -750, y: 400}
   m_SizeDelta: {x: 200, y: 200}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1632603023
@@ -2188,7 +2189,7 @@ MonoBehaviour:
   optionSelected:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1161828031}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: ScoreTracker, Assembly-CSharp
         m_MethodName: UpdateScore
         m_Mode: 0
@@ -2440,8 +2441,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -46, y: -15}
-  m_SizeDelta: {x: 200, y: 50}
+  m_AnchoredPosition: {x: -46, y: 237}
+  m_SizeDelta: {x: 300, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1962859424
 GameObject:
