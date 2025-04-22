@@ -16,7 +16,7 @@ public class RedLightInput : CheckPress
         //this is necessary because prefabs in the scene don't inherit the event relationships of prefabs in the asset list
 
         //These find the necessary methods of the object
-        Press.AddListener(newObject.GetComponent<MedicineScript>().ChangePressState);
-        Release.AddListener(newObject.GetComponent<MedicineScript>().ChangePressState);
+        Press.AddListener(newObject.GetComponent<NewMedScript>().ChangePressState);
+        Release.AddListener(newObject.GetComponent<NewMedScript>().ChangePressState);
     }
 }
