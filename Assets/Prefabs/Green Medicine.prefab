@@ -12,9 +12,8 @@ GameObject:
   - component: {fileID: 7260172892298675738}
   - component: {fileID: 6526491259369856687}
   - component: {fileID: 6253149185798318105}
-  - component: {fileID: -8581515591170760632}
   - component: {fileID: -3081863491882577649}
-  - component: {fileID: -3568970203707494174}
+  - component: {fileID: -3149391947606922506}
   m_Layer: 0
   m_Name: Green Medicine
   m_TagString: Untagged
@@ -31,7 +30,7 @@ Transform:
   m_GameObject: {fileID: 3007208699254843589}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.002298492, y: 2.1499999, z: -5.031063}
+  m_LocalPosition: {x: -0.007079389, y: 2.1499999, z: -5.0811543}
   m_LocalScale: {x: 0.05, y: 0.05, z: 0.05}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -107,24 +106,12 @@ CapsuleCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 2
   m_Radius: 0.5
   m_Height: 2
   m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &-8581515591170760632
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3007208699254843589}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 59a5b549716118f49b2363452a541923, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!54 &-3081863491882577649
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -152,7 +139,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &-3568970203707494174
+--- !u!114 &-3149391947606922506
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -161,10 +148,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 3007208699254843589}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b03581d8efdeb6a47aad5f217c473293, type: 3}
+  m_Script: {fileID: 11500000, guid: fe589c285d3c9894d9cedf6ed677d535, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gravityMultiplier: 0.00000001
-  xThrowMultiplier: 1.25
-  yThrowPower: 1
-  zThrowMultiplier: 2.5
+  medicineType: 
+  medicinePrefab: {fileID: 3007208699254843589}
+  xThrowMult: 2
+  yThrowMult: 3
+  zThrowMult: 2
+  MedicineThrown:
+    m_PersistentCalls:
+      m_Calls: []
