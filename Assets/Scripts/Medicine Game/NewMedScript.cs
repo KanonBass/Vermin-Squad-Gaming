@@ -36,6 +36,9 @@ public class NewMedScript : MonoBehaviour
     [SerializeField] private float yThrowMult;
     [SerializeField] private float zThrowMult;
 
+    [SerializeField] private float maxLifetime = 5;
+    private float currentLifetime = 0;
+
     private void Awake()
     {
         //Gets the collider and rigid body of this object
@@ -51,12 +54,21 @@ public class NewMedScript : MonoBehaviour
         cam = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<Camera>();
         startPosition = transform.position;
 
+        isSelected = true;
+
         thisCollider = GetComponent<CapsuleCollider>();
     }
 
-    private void OnMouseDown()
+    private void Update()
     {
-        isSelected = true;
+        if (hasReleased)
+        {
+            currentLifetime += Time.deltaTime;
+            if (currentLifetime > maxLifetime)
+            {
+                Destroy(gameObject);
+            }
+        }
     }
 
     /// <summary>
@@ -67,8 +79,6 @@ public class NewMedScript : MonoBehaviour
     {        
         if (isSelected && !hasReleased)
         {
-            Debug.Log("Should be thrown");
-
             hasReleased = true;
 
             thisBody.isKinematic = false;
@@ -79,8 +89,6 @@ public class NewMedScript : MonoBehaviour
 
     public void ThrowMeds()
     {
-        Debug.Log("Should be Thrown");
-
         thisCollider.enabled = false;
 
         ray = cam.ScreenPointToRay(Input.mousePosition);
@@ -98,6 +106,4 @@ public class NewMedScript : MonoBehaviour
         thisCollider.enabled = true;
         GetComponent<Rigidbody>().AddForce(force, ForceMode.VelocityChange);
     }
-
-
 }

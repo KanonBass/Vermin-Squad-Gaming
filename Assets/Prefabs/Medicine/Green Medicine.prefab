@@ -151,11 +151,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe589c285d3c9894d9cedf6ed677d535, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  medicineType: 
   medicinePrefab: {fileID: 3007208699254843589}
   xThrowMult: 2
   yThrowMult: 3
   zThrowMult: 2
-  MedicineThrown:
-    m_PersistentCalls:
-      m_Calls: []

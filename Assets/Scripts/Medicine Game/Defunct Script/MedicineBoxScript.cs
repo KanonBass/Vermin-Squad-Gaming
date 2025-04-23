@@ -46,17 +46,17 @@ public class MedicineBoxScript : MonoBehaviour
     /// </summary>
     private void OnMouseDown()
     {
-        ////These are all used to calculate the spawn position of the medicine
-        ////First you create a ray from the camera based on the mouse's position 
-        //ray = cam.ScreenPointToRay(Input.mousePosition);
-        ////Then you cast the ray, which will return a RaycastHit based on the first thing the ray collides with
-        //Physics.Raycast(ray, out hit);
-        ////then we set the medicine's transform position to the point
-        //medicine.transform.position = hit.point;
+        //These are all used to calculate the spawn position of the medicine
+        //First you create a ray from the camera based on the mouse's position 
+        ray = cam.ScreenPointToRay(Input.mousePosition);
+        //Then you cast the ray, which will return a RaycastHit based on the first thing the ray collides with
+        Physics.Raycast(ray, out hit);
+        //then we set the medicine's transform position to the point
+        medicine.transform.position = hit.point;
 
-        ////Once we know where it spawns we instantiate the object at that position, which is stored in newMedicine
-        //newMedicine = Instantiate(medicine, medicine.transform);
-        ////Finally we invoke this event to tell other scripts that a new medicine has been created
-        //MedicineCreated?.Invoke(newMedicine);
+        //Once we know where it spawns we instantiate the object at that position, which is stored in newMedicine
+        newMedicine = Instantiate(medicine, medicine.transform);
+        //Finally we invoke this event to tell other scripts that a new medicine has been created
+        MedicineCreated?.Invoke(newMedicine);
     }
 }

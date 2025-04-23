@@ -812,7 +812,7 @@ MonoBehaviour:
   optionSelected:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1161828031}
         m_TargetAssemblyTypeName: ScoreTracker, Assembly-CSharp
         m_MethodName: UpdateScore
         m_Mode: 0
@@ -915,7 +915,7 @@ MonoBehaviour:
   optionSelected:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1161828031}
         m_TargetAssemblyTypeName: ScoreTracker, Assembly-CSharp
         m_MethodName: UpdateScore
         m_Mode: 0
@@ -3426,7 +3426,7 @@ MonoBehaviour:
   optionSelected:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1161828031}
         m_TargetAssemblyTypeName: ScoreTracker, Assembly-CSharp
         m_MethodName: UpdateScore
         m_Mode: 0
