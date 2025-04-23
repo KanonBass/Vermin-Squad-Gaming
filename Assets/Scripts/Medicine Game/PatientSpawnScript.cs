@@ -31,11 +31,13 @@ public class PatientSpawnScript : MonoBehaviour
 
     public Patient SpawnPatient(int newDestination)
     {
-        Patient newPatient = patientTypes[UnityEngine.Random.Range(0, patientTypes.Length - 1)];
+        Debug.Log(newDestination);
+        Patient newPatient = new Patient();
 
-        Vector3 destination = new Vector3(leftPoint.transform.position.x + 1 * xPatientDistance * newDestination, leftPoint.transform.position.y, leftPoint.transform.position.z);
-        newPatient.destinationPoint = destination;
+        newPatient.destinationPoint = new Vector3(leftPoint.transform.position.x + 1 * xPatientDistance * newDestination, leftPoint.transform.position.y, leftPoint.transform.position.z);
         newPatient.patientNum = newDestination;
+
+        Debug.Log(newPatient.patientNum);
         
 
         if (patientNumber%2 == 0)
@@ -49,20 +51,25 @@ public class PatientSpawnScript : MonoBehaviour
             newPatient.returnPoint = rightSpawn;
         }
 
-        Instantiate(newPatient.model, nextSpawn.transform.position, Quaternion.identity);
+        newPatient.model = Instantiate(patientTypes[UnityEngine.Random.Range(0, patientTypes.Length)].model, nextSpawn.transform.position, Quaternion.identity);
         AddSpawnListener(newPatient.model);
+        Debug.Log( newPatient.patientNum);
         PatientSpawned?.Invoke(newPatient);
+        RemoveSpawnListener(newPatient.model);
+
+        patientNumber++;
 
         return newPatient;
     }
 
     public void AddSpawnListener(GameObject newObject)
     {
-        PatientSpawned.AddListener(newObject.GetComponent<PatientInfo>().SetPatient);
+        Debug.Log("Patient is added to listener");
+        PatientSpawned.AddListener(newObject.GetComponent<PatientAI>().SetPatient);
     }
 
     public void RemoveSpawnListener(GameObject removingObject)
     {
-        PatientSpawned.RemoveListener(removingObject.GetComponent<PatientInfo>().SetPatient);
+        PatientSpawned.RemoveListener(removingObject.GetComponent<PatientAI>().SetPatient);
     }
 }

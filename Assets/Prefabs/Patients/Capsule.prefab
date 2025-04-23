@@ -14,7 +14,6 @@ GameObject:
   - component: {fileID: 2064117320983592792}
   - component: {fileID: -9082397221439395519}
   - component: {fileID: 7698934574579229774}
-  - component: {fileID: 1560190195018060970}
   m_Layer: 0
   m_Name: Capsule
   m_TagString: Untagged
@@ -121,8 +120,8 @@ NavMeshAgent:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9121066973927270679}
   m_Enabled: 1
-  m_AgentTypeID: 0
-  m_Radius: 0.01
+  m_AgentTypeID: -1372625422
+  m_Radius: 0.5
   m_Speed: 3.5
   m_Acceleration: 8
   avoidancePriority: 50
@@ -147,17 +146,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 79937854b406db940b88216fd348f18b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &1560190195018060970
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9121066973927270679}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e9c65096757fe004bb29fa359effed27, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  modelType: {fileID: 9121066973927270679}
-  illness: 0
+  agent: {fileID: -9082397221439395519}

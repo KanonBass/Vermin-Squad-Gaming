@@ -1,7 +1,7 @@
 using UnityEngine;
 
 [System.Serializable]
-public class Patient : MonoBehaviour
+public class Patient
 {
     public GameObject model;
     public string illness;
