@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: -3907983477944313784}
   m_Layer: 0
   m_Name: Blue Medicine
-  m_TagString: Untagged
+  m_TagString: medicine
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -152,6 +152,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   medicinePrefab: {fileID: 3007208699254843589}
+  illnessCured: ache
   xThrowMult: 2
   yThrowMult: 3
   zThrowMult: 2
+  maxLifetime: 5

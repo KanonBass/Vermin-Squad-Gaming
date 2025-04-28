@@ -1,8 +1,10 @@
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class NewMedScript : MonoBehaviour
 {
     [SerializeField] private GameObject medicinePrefab;
+    [SerializeField] private string illnessCured;
 
     private Vector3 startPosition;
 
@@ -39,6 +41,10 @@ public class NewMedScript : MonoBehaviour
     [SerializeField] private float maxLifetime = 5;
     private float currentLifetime = 0;
 
+    [SerializeField] private float maxHitLifetime = .5f;
+    private float hitLifetime = 0;
+    private bool hasHit = false;
+
     private void Awake()
     {
         //Gets the collider and rigid body of this object
@@ -67,6 +73,15 @@ public class NewMedScript : MonoBehaviour
             if (currentLifetime > maxLifetime)
             {
                 Destroy(gameObject);
+            }
+
+            if (hasHit)
+            {
+                hitLifetime += Time.deltaTime;
+                if(hitLifetime >= maxHitLifetime)
+                {
+                    Destroy(gameObject);
+                }
             }
         }
     }
@@ -105,5 +120,19 @@ public class NewMedScript : MonoBehaviour
 
         thisCollider.enabled = true;
         GetComponent<Rigidbody>().AddForce(force, ForceMode.VelocityChange);
+    }
+
+    public string getIllness()
+    {
+        return illnessCured;
+    }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.CompareTag("Patient"))
+        {
+            hasHit = true;
+            thisCollider.enabled = false;
+        }
     }
 }

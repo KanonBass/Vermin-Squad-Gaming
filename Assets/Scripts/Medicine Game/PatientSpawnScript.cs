@@ -9,9 +9,16 @@ public class PatientSpawnScript : MonoBehaviour
     [SerializeField] private GameObject rightSpawn;
     [SerializeField] private GameObject leftPoint;
 
-    [SerializeField] private float xPatientDistance;
+    [SerializeField] private float xPatientDistance = 1.25f;
 
     [SerializeField] private Patient[] patientTypes;
+
+    [SerializeField] private float defaultMaxTime = 10;
+    [SerializeField] private float maxTimeSpeedMultiplier = 1;
+    [SerializeField] private float baseVelocity = 5;
+    [SerializeField] private float velocitySpeedMultiplier = 1;
+    [SerializeField] private float baseAcceleration;
+    [SerializeField] private float accelerationSpeedMultiplier = 1;
 
 
     private GameObject nextSpawn;
@@ -21,6 +28,12 @@ public class PatientSpawnScript : MonoBehaviour
     private GameObject currentPatients;
 
     public UnityEvent<Patient> PatientSpawned;
+    public UnityEvent<GameObject> NewPatient;
+    public UnityEvent UpdateSpeed;
+
+    private bool isEnabled = true;
+
+    private float currentSpeed;
 
     private void Start()
     {
@@ -31,13 +44,11 @@ public class PatientSpawnScript : MonoBehaviour
 
     public Patient SpawnPatient(int newDestination)
     {
-        Debug.Log(newDestination);
         Patient newPatient = new Patient();
 
-        newPatient.destinationPoint = new Vector3(leftPoint.transform.position.x + 1 * xPatientDistance * newDestination, leftPoint.transform.position.y, leftPoint.transform.position.z);
+        newPatient.destinationPoint = new Vector3(leftPoint.transform.position.x + xPatientDistance * newDestination, leftPoint.transform.position.y, leftPoint.transform.position.z);
         newPatient.patientNum = newDestination;
 
-        Debug.Log(newPatient.patientNum);
         
 
         if (patientNumber%2 == 0)
@@ -51,11 +62,17 @@ public class PatientSpawnScript : MonoBehaviour
             newPatient.returnPoint = rightSpawn;
         }
 
-        newPatient.model = Instantiate(patientTypes[UnityEngine.Random.Range(0, patientTypes.Length)].model, nextSpawn.transform.position, Quaternion.identity);
+        int spawnNumber = UnityEngine.Random.Range(0, patientTypes.Length);
+        newPatient.illness = patientTypes[spawnNumber].illness;
+        newPatient.maxTime = defaultMaxTime - (currentSpeed * maxTimeSpeedMultiplier);
+        newPatient.velocity = baseVelocity + (currentSpeed * velocitySpeedMultiplier);
+        newPatient.acceleration = baseAcceleration + (currentSpeed * accelerationSpeedMultiplier);
+
+        newPatient.model = Instantiate(patientTypes[spawnNumber].model, nextSpawn.transform.position, Quaternion.identity);
         AddSpawnListener(newPatient.model);
-        Debug.Log( newPatient.patientNum);
         PatientSpawned?.Invoke(newPatient);
         RemoveSpawnListener(newPatient.model);
+        NewPatient?.Invoke(newPatient.model);
 
         patientNumber++;
 
@@ -64,7 +81,6 @@ public class PatientSpawnScript : MonoBehaviour
 
     public void AddSpawnListener(GameObject newObject)
     {
-        Debug.Log("Patient is added to listener");
         PatientSpawned.AddListener(newObject.GetComponent<PatientAI>().SetPatient);
     }
 
@@ -72,4 +88,36 @@ public class PatientSpawnScript : MonoBehaviour
     {
         PatientSpawned.RemoveListener(removingObject.GetComponent<PatientAI>().SetPatient);
     }
+
+    public void PatientReturned(Patient returnedPatient)
+    {
+        if (isEnabled)
+        {
+            UpdateSpeed.Invoke();
+
+            if (returnedPatient.destinationPoint.x == leftPoint.transform.position.x)
+            {
+                SpawnPatient(0);
+            }
+            else if (returnedPatient.destinationPoint.x == leftPoint.transform.position.x + xPatientDistance)
+            {
+                SpawnPatient(1);
+            }
+            else
+            {
+                SpawnPatient(2);
+            }
+        }
+    }
+
+    public void ChangeEnabled(bool newVal)
+    {
+        isEnabled = newVal;
+    }
+
+    public void ChangeSpeed(float newSpeed)
+    {
+        currentSpeed = newSpeed;
+    }
 }
+

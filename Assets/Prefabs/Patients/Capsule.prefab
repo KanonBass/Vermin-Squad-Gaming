@@ -12,11 +12,12 @@ GameObject:
   - component: {fileID: 5041769184057756708}
   - component: {fileID: 3564802086939551837}
   - component: {fileID: 2064117320983592792}
+  - component: {fileID: -6119513920475951303}
   - component: {fileID: -9082397221439395519}
   - component: {fileID: 7698934574579229774}
   m_Layer: 0
   m_Name: Capsule
-  m_TagString: Untagged
+  m_TagString: Patient
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -112,6 +113,29 @@ CapsuleCollider:
   m_Height: 2
   m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!136 &-6119513920475951303
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9121066973927270679}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.5
+  m_Height: 2
+  m_Direction: 1
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!195 &-9082397221439395519
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -125,7 +149,7 @@ NavMeshAgent:
   m_Speed: 3.5
   m_Acceleration: 8
   avoidancePriority: 50
-  m_AngularSpeed: 120
+  m_AngularSpeed: 1000
   m_StoppingDistance: 0
   m_AutoTraverseOffMeshLink: 1
   m_AutoBraking: 1
@@ -147,3 +171,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   agent: {fileID: -9082397221439395519}
+  despawnThreashHold: 0.5
+  CorrectMedicineCollided:
+    m_PersistentCalls:
+      m_Calls: []
+  IncorrectMedicineCollided:
+    m_PersistentCalls:
+      m_Calls: []
+  PatientFinished:
+    m_PersistentCalls:
+      m_Calls: []

@@ -6,6 +6,10 @@ TagManager:
   tags:
   - ScoreTracker
   - Plane
+  - medicine
+  - PatientSpawner
+  - LifeTracker
+  - Patient
   layers:
   - Default
   - TransparentFX
