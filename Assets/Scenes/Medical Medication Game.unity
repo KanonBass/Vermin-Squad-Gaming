@@ -547,7 +547,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e51b16c4453cc484e939f6fc3c8f10ad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  increaseSpeedMultiplier: 1
+  increaseSpeedMultiplier: 0.4
   SpeedChanged:
     m_PersistentCalls:
       m_Calls:
@@ -2840,12 +2840,12 @@ MonoBehaviour:
     velocity: 0
     acceleration: 0
     stoppingDistance: 0
-  defaultMaxTime: 10
-  maxTimeSpeedMultiplier: 1
+  defaultMaxTime: 7
+  maxTimeSpeedMultiplier: 0.3
   baseVelocity: 5
-  velocitySpeedMultiplier: 2
+  velocitySpeedMultiplier: 1
   baseAcceleration: 10
-  accelerationSpeedMultiplier: 4
+  accelerationSpeedMultiplier: 2
   PatientSpawned:
     m_PersistentCalls:
       m_Calls: []
