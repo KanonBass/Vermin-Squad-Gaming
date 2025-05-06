@@ -488,7 +488,7 @@
                     "path": "<Mouse>/leftButton",
                     "interactions": "",
                     "processors": "",
-                    "groups": "",
+                    "groups": ";Keyboard&Mouse",
                     "action": "Book Reading",
                     "isComposite": false,
                     "isPartOfComposite": false
@@ -499,7 +499,7 @@
                     "path": "<Touchscreen>/primaryTouch/tap",
                     "interactions": "",
                     "processors": "",
-                    "groups": "",
+                    "groups": ";Touch",
                     "action": "Book Reading",
                     "isComposite": false,
                     "isPartOfComposite": false

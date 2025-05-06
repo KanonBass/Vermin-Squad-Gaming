@@ -6,23 +6,53 @@ using Unity.AI;
 using UnityEngine.AI;
 using UnityEngine.UIElements;
 
+/// <summary>
+/// Script used to move the crowd in Speech minigame into rows and columns
+/// </summary>
 public class CrowdMovingScript : MonoBehaviour
 {
+    /// <summary>
+    /// This is the object the script spawns
+    /// </summary>
     public GameObject CrowdPrefab1;
 
+    /// <summary>
+    /// Point on the left side of the stage where inactive crowd gathers
+    /// </summary>
     [SerializeField] private GameObject leftPointObject;
+    /// <summary>
+    /// Point on the right side of the stage where inactive crowd gathers
+    /// </summary>
     [SerializeField] private GameObject rightPointObject;
+    /// <summary>
+    /// Point o
+    /// </summary>
     [SerializeField] private GameObject startPointObject;
 
+    //These are the transforms of the different points
     private Transform leftTransform;
     private Transform rightTransform;
     private Transform startTransform;
 
-
+    /// <summary>
+    /// Number of columns the crowd forms (in the x direction)
+    /// </summary>
     [SerializeField] private int crowdRowLimit;
+    /// <summary>
+    /// Number of rows the crowd forms (in the z direction)
+    /// </summary>
     [SerializeField] private int crowdColumnLimit;
-    [SerializeField] private float xCrowdOffset;
-    [SerializeField] private float zCrowdOffset;
+    /// <summary>
+    /// Distance between the columns of the crowd (x direction)
+    /// </summary>
+    [SerializeField] private float crowdColumnOffset;
+    /// <summary>
+    /// Distance between the rows of the crowd (z direction)
+    /// </summary>
+    [SerializeField] private float crowdRowOffset;
+    /// <summary>
+    /// 
+    /// </summary>
     [SerializeField] private GameObject pointTracker;
 
     private int totalMembers;
@@ -87,7 +117,7 @@ public class CrowdMovingScript : MonoBehaviour
         {
             if (i <= currentMembers)
             {
-                crowdArray[i].SetDestination(new Vector3(startTransform.position.x - 1 * (xCrowdOffset*(i%crowdColumnLimit)), startTransform.position.y, startTransform.position.z + 1 * (zCrowdOffset*(Mathf.Floor(i/crowdColumnLimit))))); 
+                crowdArray[i].SetDestination(new Vector3(startTransform.position.x - 1 * (crowdColumnOffset * (i%crowdColumnLimit)), startTransform.position.y, startTransform.position.z + 1 * (crowdRowOffset * (Mathf.Floor(i/crowdColumnLimit))))); 
             }
             else
             {
