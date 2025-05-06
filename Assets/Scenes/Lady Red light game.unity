@@ -2318,6 +2318,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startScore: 0
   maxScore: 5
+  minScore: 0
   scoreUpdate:
     m_PersistentCalls:
       m_Calls:
