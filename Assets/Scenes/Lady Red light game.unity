@@ -693,10 +693,10 @@ MonoBehaviour:
       - m_Target: {fileID: 444660239}
         m_TargetAssemblyTypeName: GameSceneManager, Assembly-CSharp
         m_MethodName: ChangeScene
-        m_Mode: 2
+        m_Mode: 5
         m_Arguments:
-          m_ObjectArgument: {fileID: 102900000, guid: 99c9720ab356a0642a771bea13969a05, type: 3}
-          m_ObjectArgumentAssemblyTypeName: UnityEditor.SceneAsset, UnityEditor.CoreModule
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: Lady Red light game
@@ -2083,13 +2083,13 @@ MonoBehaviour:
       - m_Target: {fileID: 444660239}
         m_TargetAssemblyTypeName: GameSceneManager, Assembly-CSharp
         m_MethodName: ChangeScene
-        m_Mode: 2
+        m_Mode: 5
         m_Arguments:
-          m_ObjectArgument: {fileID: 102900000, guid: 8a033ae2484d2e34bbc534b77b0d3bd1, type: 3}
-          m_ObjectArgumentAssemblyTypeName: UnityEditor.SceneAsset, UnityEditor.CoreModule
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: Main Menu
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1938695267

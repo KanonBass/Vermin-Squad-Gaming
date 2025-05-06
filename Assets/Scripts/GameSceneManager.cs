@@ -3,7 +3,6 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
-
 public class GameSceneManager : MonoBehaviour
 {
     /// <summary>
@@ -17,13 +16,8 @@ public class GameSceneManager : MonoBehaviour
         SceneManager.LoadScene(sceneName);
     }
 
-    /// <summary>
-    /// Change the scene using a scene from the asset list
-    /// </summary>
-    /// <param name="scene"></param>
-    //This allows you to change the scene by calling this function in an event, then dragging in a scene from the assets list
-    public void ChangeScene(SceneAsset scene)
+    public void QuitGame()
     {
-        SceneManager.LoadScene(scene.name);
+        Application.Quit();
     }
 }
