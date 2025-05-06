@@ -45,15 +45,15 @@ public class OptionManager : MonoBehaviour
       
         generateOption();
         ScoreTxt.text = "Score: " + scoreTracker.GetScore();
-       /* if (scoreTracker.GetScore() == 50) 
-            {
+        if (scoreTracker.GetScore() >= scoreTracker.GetMaxScore()) 
+        {
             Won.Invoke();
         }
-        else if (scoreTracker.GetScore() == 0)
+        else if (scoreTracker.GetScore() <= scoreTracker.GetMinScore())
         {
             LosingTxt.text = "You ran out of points";
             TimeOut.Invoke();
-        }*/
+        }
     }
     void setAnswers()
     {
