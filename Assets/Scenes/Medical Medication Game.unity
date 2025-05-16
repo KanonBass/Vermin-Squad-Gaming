@@ -2841,11 +2841,9 @@ MonoBehaviour:
     acceleration: 0
     stoppingDistance: 0
   defaultMaxTime: 7
-  maxTimeSpeedMultiplier: 0.3
+  maxTimeSpeedMultiplier: 0.6
   baseVelocity: 5
-  velocitySpeedMultiplier: 1
-  baseAcceleration: 10
-  accelerationSpeedMultiplier: 2
+  velocitySpeedMultiplier: 5
   PatientSpawned:
     m_PersistentCalls:
       m_Calls: []
