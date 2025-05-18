@@ -1,0 +1,19 @@
+# ninja log v5
+37	2131	7691853869790621	GameActivity/CMakeFiles/game.dir/UGAInputKeyEvent.cpp.o	73cd5301c10c21a6
+46	2136	7691853870385552	GameActivity/CMakeFiles/game.dir/UGAEntry.cpp.o	2b31f189c5653cd
+83	2388	7691853872766935	GameActivity/CMakeFiles/game.dir/UGASoftKeyboard.cpp.o	2109195bbe0b6118
+18	2143	7691853870462834	GameActivity/CMakeFiles/game.dir/UGAConfiguration.cpp.o	3020ee2930cee872
+27	2460	7691853873746122	GameActivity/CMakeFiles/game.dir/UGADebug.cpp.o	b32516aa8f0948f9
+68	2207	7691853871175950	GameActivity/CMakeFiles/game.dir/UGAInputMotionEvent.cpp.o	7ad5d61cd5f11b08
+56	2735	7691853876479016	GameActivity/CMakeFiles/game.dir/UGAInput.cpp.o	13403fb16eaa2624
+2960	3149	7691853880736004	C:/Unity Project/Vermin-Squad-Gaming/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/intermediates/cxx/RelWithDebInfo/71115v62/obj/arm64-v8a/libgame.so	1d8cda81b85c23f9
+1	2959	7691853878622852	GameActivity/CMakeFiles/game.dir/UGAApplication.cpp.o	65449a783f701320
+46	1272	7691875693606500	GameActivity/CMakeFiles/game.dir/UGAInputKeyEvent.cpp.o	73cd5301c10c21a6
+29	1296	7691875693836666	GameActivity/CMakeFiles/game.dir/UGAEntry.cpp.o	2b31f189c5653cd
+13	1322	7691875694008758	GameActivity/CMakeFiles/game.dir/UGAConfiguration.cpp.o	3020ee2930cee872
+37	1341	7691875694323154	GameActivity/CMakeFiles/game.dir/UGAInputMotionEvent.cpp.o	7ad5d61cd5f11b08
+67	1467	7691875695587063	GameActivity/CMakeFiles/game.dir/UGASoftKeyboard.cpp.o	2109195bbe0b6118
+21	1610	7691875696137862	GameActivity/CMakeFiles/game.dir/UGADebug.cpp.o	b32516aa8f0948f9
+56	1762	7691875698504194	GameActivity/CMakeFiles/game.dir/UGAInput.cpp.o	13403fb16eaa2624
+4	1894	7691875699840526	GameActivity/CMakeFiles/game.dir/UGAApplication.cpp.o	65449a783f701320
+1895	2050	7691875701327550	C:/Unity Project/Vermin-Squad-Gaming/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/intermediates/cxx/RelWithDebInfo/71115v62/obj/arm64-v8a/libgame.so	1d8cda81b85c23f9

@@ -3,9 +3,18 @@ using UnityEngine;
 
 public class NewMedScript : MonoBehaviour
 {
+    /// <summary>
+    /// The model of the medicine
+    /// </summary>
     [SerializeField] private GameObject medicinePrefab;
+    /// <summary>
+    /// The illness this medicine cures
+    /// </summary>
     [SerializeField] private string illnessCured;
 
+    /// <summary>
+    /// The initial position of the medicine, used for vector math
+    /// </summary>
     private Vector3 startPosition;
 
     /// <summary>
@@ -23,8 +32,12 @@ public class NewMedScript : MonoBehaviour
     /// </summary>
     private Rigidbody thisBody;
 
-    private bool isSelected = false;
+    /// <summary>
+    /// Tracks when the medicine is active + throwable
+    /// </summary>
+    private bool isSelected;
 
+    
     /// <summary>
     /// The main Camera
     /// </summary>
@@ -34,13 +47,20 @@ public class NewMedScript : MonoBehaviour
     private Ray ray;
     private RaycastHit hit;
 
+    //How hard the medicine is thrown along the different axes
     [SerializeField] private float xThrowMult;
     [SerializeField] private float yThrowMult;
     [SerializeField] private float zThrowMult;
 
+    /// <summary>
+    /// How long until the medicine is despawned
+    /// </summary>
     [SerializeField] private float maxLifetime = 5;
     private float currentLifetime = 0;
 
+    /// <summary>
+    /// How long the medicine is alive after it hits a patient
+    /// </summary>
     [SerializeField] private float maxHitLifetime = .5f;
     private float hitLifetime = 0;
     private bool hasHit = false;
@@ -67,6 +87,7 @@ public class NewMedScript : MonoBehaviour
 
     private void Update()
     {
+        //If the player has thrown the medicine then this tracks when it should despawn
         if (hasReleased)
         {
             currentLifetime += Time.deltaTime;
@@ -87,7 +108,7 @@ public class NewMedScript : MonoBehaviour
     }
 
     /// <summary>
-    /// This is used to change the released variable of the medicine
+    /// Used to change the released variable of the medicine and throw it
     /// </summary>
     /// <param name="newState"></param>
     public void ChangePressState(bool newState)
@@ -102,31 +123,48 @@ public class NewMedScript : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// Throws the medicine towards the mouse's position
+    /// </summary>
     public void ThrowMeds()
     {
+        //The collider is temporarily disabled to prevent issues with the ray being cast
         thisCollider.enabled = false;
 
+        //Cast a ray from the mouse's position.
         ray = cam.ScreenPointToRay(Input.mousePosition);
         Physics.Raycast(ray, out hit);
 
         float xForce;
         float zForce;
 
+        //Simple vector math to get the direction from the medicine to where the ray hit on the x-z plane
         xForce = hit.point.x - transform.position.x;
         zForce = hit.point.z - transform.position.z;
 
+        //Vector for the throw force in the correct direction with some vertical force as well
         Vector3 force = new Vector3(xForce * xThrowMult, yThrowMult, zForce * zThrowMult);
 
 
         thisCollider.enabled = true;
+
+        //Add the force to the rigid body
         GetComponent<Rigidbody>().AddForce(force, ForceMode.VelocityChange);
     }
 
+    /// <summary>
+    /// Retrieve the illness this medicine cures
+    /// </summary>
+    /// <returns></returns>
     public string getIllness()
     {
         return illnessCured;
     }
 
+    /// <summary>
+    /// Prevent the medicine from being able to hit 2 patients
+    /// </summary>
+    /// <param name="collision"></param>
     private void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.CompareTag("Patient"))

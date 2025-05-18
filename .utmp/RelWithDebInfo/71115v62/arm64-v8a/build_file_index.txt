@@ -1,0 +1,2 @@
+C:\Unity Project\Vermin-Squad-Gaming\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\cpp\CMakeLists.txt
+C:\Unity Project\Vermin-Squad-Gaming\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\cpp\GameActivity\CMakeLists.txt

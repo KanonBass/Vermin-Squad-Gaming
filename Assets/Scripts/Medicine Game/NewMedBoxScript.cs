@@ -3,16 +3,23 @@ using UnityEngine.Events;
 
 public class NewMedBoxScript : MonoBehaviour
 {
+    /// <summary>
+    /// Medicine's spawn offset from box in x direction
+    /// </summary>
     [SerializeField] private float xSpawnOffset;
+    /// <summary>
+    /// Medicine's spawn offset from box in y direction
+    /// </summary>
     [SerializeField] private float ySpawnOffset;
+    /// <summary>
+    /// Medicine's spawn offset from box in z direction
+    /// </summary>
     [SerializeField] private float zSpawnOffset;
 
     /// <summary>
     /// The prefab that the medicine box should spawn
     /// </summary>
     [SerializeField] private GameObject medicine;
-
-    [SerializeField] private GameObject medicinePoint;
 
     /// <summary>
     /// Stores the medicine object that is spawned
@@ -45,6 +52,7 @@ public class NewMedBoxScript : MonoBehaviour
     /// </summary>
     private void OnMouseDown()
     {
+        //Spawn point of the medicine
         Vector3 spawnPoint = new Vector3();
         spawnPoint.x = gameObject.transform.position.x + xSpawnOffset;
         spawnPoint.y = gameObject.transform.position.y + ySpawnOffset;
@@ -58,6 +66,7 @@ public class NewMedBoxScript : MonoBehaviour
         isCurrentMed = true;
     }
 
+    //used when you had to select the medicine type, not used any more
     public void DestroyMedicine()
     {
         if (isCurrentMed)

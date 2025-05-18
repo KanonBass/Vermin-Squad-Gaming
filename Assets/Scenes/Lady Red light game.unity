@@ -1614,7 +1614,6 @@ GameObject:
   - component: {fileID: 1711044489}
   - component: {fileID: 1711044488}
   - component: {fileID: 1711044487}
-  - component: {fileID: 1711044491}
   m_Layer: 0
   m_Name: Aletta
   m_TagString: Player
@@ -1713,18 +1712,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1711044491
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1711044486}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4378c48c50597284fbdd0918b7047fb0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1827900288
 GameObject:
   m_ObjectHideFlags: 0
