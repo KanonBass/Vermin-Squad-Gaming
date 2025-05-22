@@ -112,14 +112,17 @@ public class NewMedScript : MonoBehaviour
         float xForce;
         float zForce;
 
+
         xForce = hit.point.x - transform.position.x;
         zForce = hit.point.z - transform.position.z;
+     
 
         Vector3 force = new Vector3(xForce * xThrowMult, yThrowMult, zForce * zThrowMult);
-
+        Vector3 tumble = new Vector3(Random.Range(-2, 2), Random.Range(-2, 2), Random.Range(-2, 2));
 
         thisCollider.enabled = true;
         GetComponent<Rigidbody>().AddForce(force, ForceMode.VelocityChange);
+        GetComponent<Rigidbody>().AddTorque(tumble);
     }
 
     public string getIllness()
