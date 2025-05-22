@@ -1046,7 +1046,7 @@ MonoBehaviour:
   - {fileID: 2800000, guid: 5cccc81ac73ac2a409b9295059324e64, type: 3}
   _book_menu_1: {fileID: 771625119}
   index: 0
-  maxIndex: 3
+  maxIndex: 2
   minIndex: 0
   _sceneManager: {fileID: 1297028926}
 --- !u!1 &1153507800
@@ -1237,7 +1237,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 771625121}
         m_TargetAssemblyTypeName: turn_page, Assembly-CSharp
-        m_MethodName: pregress
+        m_MethodName: progress
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
