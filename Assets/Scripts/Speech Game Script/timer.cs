@@ -10,7 +10,10 @@ public class timer : MonoBehaviour
     
 
     public UnityEvent TimeOut;
+    public UnityEvent<string> ChangeTime;
 
+    int minutes;
+    int seconds;
    
     void Update()
     {
@@ -27,8 +30,13 @@ public class timer : MonoBehaviour
 
         }
             
-        int minutes = Mathf.FloorToInt(RemainingTime / 60); 
-        int seconds = Mathf.FloorToInt(RemainingTime % 60);
+        minutes = Mathf.FloorToInt(RemainingTime / 60); 
+        seconds = Mathf.FloorToInt(RemainingTime % 60);
         timerText.text = string.Format("{0:00}:{1:00}", minutes, seconds); // RemainingTime = time assigned in Unity in Countdown text. This divides the given time by 60 for minutes and 60 with a % to display the remaining number. Example: 5%2 = 1.
+    }
+
+    public void UpdateTime()
+    {
+        ChangeTime.Invoke(string.Format("{0:00}:{1:00}", minutes, seconds));
     }
 }

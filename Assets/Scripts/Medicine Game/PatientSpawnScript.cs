@@ -160,7 +160,7 @@ public class PatientSpawnScript : MonoBehaviour
     }
 
     /// <summary>
-    /// Tells the speed controller to increase the speed and spawns a new patient
+    /// Tells the speed controller to increase the speed and spawns a new patient given the returned patients destination point
     /// </summary>
     /// <param name="returnedPatient"></param>
     public void PatientReturned(Patient returnedPatient)

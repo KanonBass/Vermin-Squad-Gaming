@@ -10,6 +10,7 @@ public class LightTimerScript : MonoBehaviour
     
     private float currentTime = 0;
     private float maxTime;
+    private float totalTime = 0;
 
     /// <summary>
     /// The maximum amount of time the teacher won't look at the player
@@ -46,10 +47,12 @@ public class LightTimerScript : MonoBehaviour
     /// Invoked when the grace period ends
     /// </summary>
     public UnityEvent GracePeriodEnd;
+    public UnityEvent<float> TotalTime;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+
         //if the teacher starts as red or green then you generate the respective maxTime
         if (isRed)
         {
@@ -64,6 +67,9 @@ public class LightTimerScript : MonoBehaviour
     
     void Update()
     {
+
+        totalTime += Time.deltaTime;
+
         //Checks if the timer has reached its maximum
         //if it hasn't then we want to increase the timer
         //else then we want to switch between the states and generate a new maxtime for that state
@@ -115,6 +121,13 @@ public class LightTimerScript : MonoBehaviour
         float thisTimer = UnityEngine.Random.Range(thisMin, thisMax);
 
         return thisTimer;
+    }
+
+    public void GetTotalTime()
+    {
+        Debug.Log("Time Update: " + totalTime);
+
+        TotalTime?.Invoke(totalTime);
     }
 }
 

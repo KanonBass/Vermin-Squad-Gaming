@@ -51,7 +51,6 @@ public class OptionManager : MonoBehaviour
         }
         else if (scoreTracker.GetScore() <= scoreTracker.GetMinScore())
         {
-            LosingTxt.text = "You ran out of points";
             TimeOut.Invoke();
         }
     }
