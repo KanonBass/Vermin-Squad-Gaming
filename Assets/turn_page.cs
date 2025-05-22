@@ -10,7 +10,7 @@ public class turn_page : MonoBehaviour
     [SerializeField] List<Texture2D> _textures;
     [SerializeField] RawImage _book_menu_1;
     [SerializeField] int index = 0;
-    [SerializeField] int maxIndex = 3;
+    [SerializeField] int maxIndex = 2;
     [SerializeField] int minIndex = 0;
     [SerializeField] GameSceneManager _sceneManager;
 
