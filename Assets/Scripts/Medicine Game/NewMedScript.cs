@@ -141,15 +141,17 @@ public class NewMedScript : MonoBehaviour
         //Simple vector math to get the direction from the medicine to where the ray hit on the x-z plane
         xForce = hit.point.x - transform.position.x;
         zForce = hit.point.z - transform.position.z;
+     
 
         //Vector for the throw force in the correct direction with some vertical force as well
         Vector3 force = new Vector3(xForce * xThrowMult, yThrowMult, zForce * zThrowMult);
-
+        Vector3 tumble = new Vector3(Random.Range(-2, 2), Random.Range(-2, 2), Random.Range(-2, 2));
 
         thisCollider.enabled = true;
 
         //Add the force to the rigid body
         GetComponent<Rigidbody>().AddForce(force, ForceMode.VelocityChange);
+        GetComponent<Rigidbody>().AddTorque(tumble);
     }
 
     /// <summary>

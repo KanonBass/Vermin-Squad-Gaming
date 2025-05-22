@@ -152,8 +152,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   medicinePrefab: {fileID: 3007208699254843589}
-  illnessCured: ache
+  illnessCured: cut
   xThrowMult: 2
   yThrowMult: 3
   zThrowMult: 2
   maxLifetime: 5
+  maxHitLifetime: 0.5
