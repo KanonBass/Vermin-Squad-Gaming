@@ -19,7 +19,7 @@ public class turn_page : MonoBehaviour
         _book_menu_1.texture = _textures[index];
     }
 
-    public void progress()
+    public void pregress()
     {
         index = Mathf.Clamp(index + 1, minIndex, maxIndex);
         if (index < _textures.Count)
