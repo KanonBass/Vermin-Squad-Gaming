@@ -16,6 +16,6 @@ public class SpeechMenu : EndMenu
 
     public void ChangeSecondText(string time)
     {
-        secondaryText.text = "Time Remaining: " + time;
+        secondaryText.text = time;
     }
 }

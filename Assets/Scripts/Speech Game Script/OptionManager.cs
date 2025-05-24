@@ -44,7 +44,6 @@ public class OptionManager : MonoBehaviour
     {
       
         generateOption();
-        ScoreTxt.text = "Score: " + scoreTracker.GetScore();
         if (scoreTracker.GetScore() >= scoreTracker.GetMaxScore()) 
         {
             Won.Invoke();
