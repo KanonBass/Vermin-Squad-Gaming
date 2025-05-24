@@ -95,15 +95,18 @@ public class PatientSpawnScript : MonoBehaviour
     /// </summary>
     /// <param name="newDestination"></param>
     /// <returns></returns>
+    //Sets a patient count counter, this counter counts the count of spawned patients (that can probably be counts idk)
+    int PatientCount = 0;
     public Patient SpawnPatient(int newDestination)
     {
         Patient newPatient = new Patient();
 
         newPatient.destinationPoint = new Vector3(leftPoint.transform.position.x + xPatientDistance * newDestination, leftPoint.transform.position.y, leftPoint.transform.position.z);
         newPatient.patientNum = newDestination;
-        
+
+
         //Decides if the patient should spawn and return to the left of the building or the right
-        if (patientNumber%2 == 0)
+        if (patientNumber % 2 == 0)
         {
             nextSpawn = leftSpawn;
             newPatient.returnPoint = leftSpawn;
@@ -117,17 +120,28 @@ public class PatientSpawnScript : MonoBehaviour
         //randomly generates which patient from the patientTypes array should be spawned and trakcs that number
         int spawnNumber = UnityEngine.Random.Range(0, patientTypes.Length);
 
+
         //These update all of the different pieces of information the patient needs
         newPatient.illness = patientTypes[spawnNumber].illness;
-        newPatient.maxTime = defaultMaxTime - (Mathf.Sqrt(currentSpeed * maxTimeSpeedMultiplier));
-        Debug.Log("Max time: " + newPatient.maxTime);
+        if (PatientCount > 2)
+        {
+            newPatient.maxTime = defaultMaxTime - (Mathf.Sqrt(currentSpeed * maxTimeSpeedMultiplier));
+            Debug.Log("Max time: " + newPatient.maxTime);
+        }
+        else
+        {
+            newPatient.maxTime = 999999;
+        }
+
         newPatient.velocity = baseVelocity + (Mathf.Sqrt(currentSpeed * velocitySpeedMultiplier));
         Debug.Log("Velocity: " + newPatient.velocity);
         newPatient.acceleration = newPatient.velocity * 2;
 
         //Spawns the new patient
         newPatient.model = Instantiate(patientTypes[spawnNumber].model, nextSpawn.transform.position, Quaternion.identity);
-
+        //Adds 1 to the patient counter
+        PatientCount ++;
+       
         //This is used to transfer the patient's information to the new patient
         AddSpawnListener(newPatient.model);
         PatientSpawned?.Invoke(newPatient);
