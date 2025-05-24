@@ -7,6 +7,7 @@ public class timer : MonoBehaviour
 {
     [SerializeField] TextMeshProUGUI timerText; 
     [SerializeField] float RemainingTime;
+    private float initialTime;
     
 
     public UnityEvent TimeOut;
@@ -14,7 +15,12 @@ public class timer : MonoBehaviour
 
     int minutes;
     int seconds;
-   
+
+    private void Start()
+    {
+        initialTime = RemainingTime;
+    }
+
     void Update()
     {
         if (RemainingTime > 0)
@@ -32,11 +38,14 @@ public class timer : MonoBehaviour
             
         minutes = Mathf.FloorToInt(RemainingTime / 60); 
         seconds = Mathf.FloorToInt(RemainingTime % 60);
-        timerText.text = string.Format("{0:00}:{1:00}", minutes, seconds); // RemainingTime = time assigned in Unity in Countdown text. This divides the given time by 60 for minutes and 60 with a % to display the remaining number. Example: 5%2 = 1.
+        timerText.text = "Time " + string.Format("{0:00}:{1:00}", minutes, seconds); // RemainingTime = time assigned in Unity in Countdown text. This divides the given time by 60 for minutes and 60 with a % to display the remaining number. Example: 5%2 = 1.
     }
 
     public void UpdateTime()
     {
-        ChangeTime.Invoke(string.Format("{0:00}:{1:00}", minutes, seconds));
+        var thisMin = Mathf.FloorToInt((initialTime - RemainingTime) / 60);
+        var thisSec = Mathf.FloorToInt((initialTime - RemainingTime) % 60);
+
+        ChangeTime.Invoke("Time Taken: " + string.Format("{0:00}:{1:00}", thisMin, thisSec));
     }
 }
