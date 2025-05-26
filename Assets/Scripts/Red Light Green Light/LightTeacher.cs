@@ -87,7 +87,7 @@ public class LightTeacher : MonoBehaviour
             
             tmpMaterials[0] = _materials[1];
             meshRenderer.materials = tmpMaterials;
-
+            transform.Rotate(0f, -180f, 0f, Space.Self);
 
         }
         else
@@ -95,7 +95,7 @@ public class LightTeacher : MonoBehaviour
             Debug.Log("material should be green");
             tmpMaterials[0] = _materials[0];
             meshRenderer.materials = tmpMaterials;
-
+            transform.Rotate(0f, 0f, 0f, Space.Self);
 
         }
     }
