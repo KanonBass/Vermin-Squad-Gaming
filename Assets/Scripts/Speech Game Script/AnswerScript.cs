@@ -1,7 +1,7 @@
 using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
-using UnityEngine.Events;
+using UnityEngine.Events;   
 public class AnswerScript : MonoBehaviour
 {
     public bool isCorrect = false;
@@ -15,7 +15,7 @@ public class AnswerScript : MonoBehaviour
         {
             optionSelected?.Invoke(scoreValue);
             Debug.Log("Correct Answer");
-            optionManager.correct();
+            optionManager.Correct();
 
             
 
@@ -24,7 +24,7 @@ public class AnswerScript : MonoBehaviour
         {
             optionSelected?.Invoke(-scoreValue);
             Debug.Log("Wrong Answer");
-            optionManager.correct();
+            optionManager.Correct();
             
         }
 }
