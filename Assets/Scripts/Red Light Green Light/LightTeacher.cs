@@ -1,6 +1,7 @@
+using System.Collections.Generic;
+using Unity.Mathematics;
 using UnityEngine;
 using UnityEngine.Events;
-
 /// <summary>
 /// Script for the teacher in the red light minigame
 /// </summary>
@@ -22,7 +23,9 @@ public class LightTeacher : MonoBehaviour
     public UnityEvent Caught;
 
     //The material of the teacher which is used to change color, temporary for now
-    [SerializeField] private Material thisMaterial;
+    [SerializeField] List<Material> _materials;
+    [SerializeField] int index = 0;
+    [SerializeField] int maxIndex = 1;
 
     //colors used for the states of the teacher, temporary
     private Color greenColor;
@@ -34,6 +37,7 @@ public class LightTeacher : MonoBehaviour
         //define the colors of the teacher using hexadecimal 
         ColorUtility.TryParseHtmlString("#33A93D", out greenColor);
         ColorUtility.TryParseHtmlString("#9F0400", out redColor);
+        TeacherColorChange(false);
     }
 
     /// <summary>
@@ -74,15 +78,26 @@ public class LightTeacher : MonoBehaviour
     /// <param name="isred"></param>
     public void TeacherColorChange(bool isred)
     {
+        MeshRenderer meshRenderer = GetComponent<MeshRenderer>();
+        Material[] tmpMaterials = meshRenderer.materials;
+        
+
         if (isred)
         {
             Debug.Log("material should be red");
-            this.GetComponent<Renderer>().material.color = redColor;
+            
+            tmpMaterials[0] = _materials[1];
+            meshRenderer.materials = tmpMaterials;
+            transform.rotation = new quaternion(0,0,0,0);
+
         }
         else
         {
             Debug.Log("material should be green");
-            this.GetComponent<Renderer>().material.color = greenColor;
+            tmpMaterials[0] = _materials[0];
+            meshRenderer.materials = tmpMaterials;
+            transform.rotation = new quaternion(0, -180, 0, 0);
+
         }
     }
 }
