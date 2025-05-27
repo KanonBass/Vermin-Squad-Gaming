@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using Unity.Mathematics;
 using UnityEngine;
 using UnityEngine.Events;
 /// <summary>
@@ -36,7 +37,7 @@ public class LightTeacher : MonoBehaviour
         //define the colors of the teacher using hexadecimal 
         ColorUtility.TryParseHtmlString("#33A93D", out greenColor);
         ColorUtility.TryParseHtmlString("#9F0400", out redColor);
-        TeacherColorChange(true);
+        TeacherColorChange(false);
     }
 
     /// <summary>
@@ -87,7 +88,7 @@ public class LightTeacher : MonoBehaviour
             
             tmpMaterials[0] = _materials[1];
             meshRenderer.materials = tmpMaterials;
-            transform.Rotate(0f, -180f, 0f, Space.Self);
+            transform.rotation = new quaternion(0,0,0,0);
 
         }
         else
@@ -95,7 +96,7 @@ public class LightTeacher : MonoBehaviour
             Debug.Log("material should be green");
             tmpMaterials[0] = _materials[0];
             meshRenderer.materials = tmpMaterials;
-            transform.Rotate(0f, 0f, 0f, Space.Self);
+            transform.rotation = new quaternion(0, -180, 0, 0);
 
         }
     }
