@@ -34,31 +34,31 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: d88b5a4a3995f1b489a472fde83b32a0, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.99122405
+      value: 0.980572
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: d88b5a4a3995f1b489a472fde83b32a0, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.06547734
+      value: 0.13531962
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: d88b5a4a3995f1b489a472fde83b32a0, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.02985833
+      value: 0.12769698
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: d88b5a4a3995f1b489a472fde83b32a0, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.11088823
+      value: -0.062134203
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: d88b5a4a3995f1b489a472fde83b32a0, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
-      value: 7.076
+      value: 16.335
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: d88b5a4a3995f1b489a472fde83b32a0, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 4.26
+      value: 14.09
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: d88b5a4a3995f1b489a472fde83b32a0, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 13.03
+      value: -5.219
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: d88b5a4a3995f1b489a472fde83b32a0, type: 3}
       propertyPath: m_Name
@@ -106,10 +106,10 @@ CapsuleCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 4.3311415
-  m_Height: 8.662283
+  m_Radius: 3.6397622
+  m_Height: 8.662284
   m_Direction: 1
-  m_Center: {x: -0.000000009336759, y: 0.000000008307985, z: 3.8311305}
+  m_Center: {x: 1, y: -4.9999743, z: 0}
 --- !u!136 &8656073974732262944
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -129,10 +129,10 @@ CapsuleCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 5.722638
-  m_Height: 11.445276
+  m_Radius: 4.256408
+  m_Height: 8.662284
   m_Direction: 1
-  m_Center: {x: -1.8296436, y: -1.9275383, z: 1.9648435}
+  m_Center: {x: 1.6166441, y: -4.999962, z: 0.00000048914416}
 --- !u!195 &7197218267494577185
 NavMeshAgent:
   m_ObjectHideFlags: 0

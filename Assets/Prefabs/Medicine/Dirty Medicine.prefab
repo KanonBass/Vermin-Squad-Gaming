@@ -153,7 +153,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   medicinePrefab: {fileID: 3007208699254843589}
-  illnessCured: dirty
+  illnessCured: Dirty
   xThrowMult: 2
   yThrowMult: 3
   zThrowMult: 2
