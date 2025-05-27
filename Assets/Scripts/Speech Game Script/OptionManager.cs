@@ -1,13 +1,10 @@
 
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.UI;
 using TMPro;
-using Unity.VisualScripting;
 using UnityEngine.SceneManagement;
-using System.Threading;
 
 public class OptionManager : MonoBehaviour
 {
@@ -18,7 +15,7 @@ public class OptionManager : MonoBehaviour
     public int previousOption = -1;
     public UnityEvent Won;
     public UnityEvent TimeOut;
-   
+
 
 
     public TextMeshProUGUI OptionTxt;
@@ -30,7 +27,7 @@ public class OptionManager : MonoBehaviour
 
     private void Start() //Whenever the game starts it instantly starts the option randomiser.
     {
-           generateOption();
+           GenerateOption();
     }
 
    
@@ -40,10 +37,10 @@ public class OptionManager : MonoBehaviour
   }
    
  
-    public void correct() 
+    public void Correct() 
     {
       
-        generateOption();
+        GenerateOption();
         if (scoreTracker.GetScore() >= scoreTracker.GetMaxScore()) 
         {
             Won.Invoke();
@@ -53,12 +50,14 @@ public class OptionManager : MonoBehaviour
             TimeOut.Invoke();
         }
     }
-    void setAnswers()
+    void SetAnswers()
     {
         for (int i = 0; i < options.Length; i++)
         {
             options[i].GetComponent<AnswerScript>().isCorrect = false;
             options[i].transform.GetChild(0).GetComponent<Image>().sprite = OnA[currentOption].Answers[i];
+            
+
 
             if (OnA[currentOption].CorrectOption == i + 1)
             {
@@ -77,7 +76,7 @@ public class OptionManager : MonoBehaviour
             shuffledOptions.Add(i);
         }
 
-        // Fisher-Yates Shuffle
+        
         for (int i = 0; i < shuffledOptions.Count; i++)
         {
             int randIndex = Random.Range(i, shuffledOptions.Count);
@@ -86,19 +85,19 @@ public class OptionManager : MonoBehaviour
             shuffledOptions[randIndex] = temp;
         }
 
-        // Ensure first one is not the same as the previous option (optional)
+        
         if (shuffledOptions.Count > 1 && shuffledOptions[0] == previousOption)
         {
-            // Swap first with second to avoid immediate repeat
+            
             int temp = shuffledOptions[0];
             shuffledOptions[0] = shuffledOptions[1];
             shuffledOptions[1] = temp;
         }
     }
 
-    void generateOption()
+    void GenerateOption()
     {
-        // If no more shuffled options left, reshuffle
+        
         if (shuffledOptions.Count == 0)
         {
             ShuffleOptions();
@@ -107,17 +106,17 @@ public class OptionManager : MonoBehaviour
         currentOption = shuffledOptions[0];
         shuffledOptions.RemoveAt(0);
 
-        // Prevent immediate repeat (shouldn’t happen due to shuffle, but safety net)
+        
         if (currentOption == previousOption && OnA.Count > 1)
         {
-            generateOption(); // Recursively call to pick next valid
+            GenerateOption(); 
             return;
         }
 
         previousOption = currentOption;
 
         OptionTxt.text = OnA[currentOption].Option;
-        setAnswers();
+        SetAnswers();
     }
 
 }
