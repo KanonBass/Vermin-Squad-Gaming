@@ -95,8 +95,9 @@ public class PatientSpawnScript : MonoBehaviour
     /// </summary>
     /// <param name="newDestination"></param>
     /// <returns></returns>
-    //Sets a patient count counter, this counter counts the count of spawned patients (that can probably be counts idk)
+    //Sets a patient count counter, this counter counts the count of spawned patients (that can probably be counts)
     int PatientCount = 0;
+    int PatientLeft = 0;
     public Patient SpawnPatient(int newDestination)
     {
         Patient newPatient = new Patient();
@@ -181,20 +182,31 @@ public class PatientSpawnScript : MonoBehaviour
     {
         if (isEnabled)
         {
-            UpdateSpeed.Invoke();
+            PatientLeft++;
 
-            if (returnedPatient.destinationPoint.x == leftPoint.transform.position.x)
+            UpdateSpeed.Invoke();
+            if (PatientLeft > 3)
+            {
+                if (returnedPatient.destinationPoint.x == leftPoint.transform.position.x)
+                {
+                    SpawnPatient(0);
+                }
+                else if (returnedPatient.destinationPoint.x == leftPoint.transform.position.x + xPatientDistance)
+                {
+                    SpawnPatient(1);
+                }
+                else
+                {
+                    SpawnPatient(2);
+                }
+            }
+            else if (PatientLeft == 3)
             {
                 SpawnPatient(0);
-            }
-            else if (returnedPatient.destinationPoint.x == leftPoint.transform.position.x + xPatientDistance)
-            {
                 SpawnPatient(1);
-            }
-            else
-            {
                 SpawnPatient(2);
             }
+            
         }
     }
 
