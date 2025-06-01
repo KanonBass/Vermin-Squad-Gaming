@@ -222,7 +222,7 @@ Transform:
   m_GameObject: {fileID: 111683394}
   serializedVersion: 2
   m_LocalRotation: {x: -0.7078148, y: -0.0002077785, z: 0.00038408104, w: 0.70639795}
-  m_LocalPosition: {x: 0.009, y: 2.0715, z: -5.148}
+  m_LocalPosition: {x: -0.31, y: 2.0715, z: -5.148}
   m_LocalScale: {x: 0.016420025, y: 0.023083663, z: 0.014594415}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1057,6 +1057,11 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &691740530 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4530158363378796919, guid: ed6055b167d2df34db02f3f2e28c763a, type: 3}
+  m_PrefabInstance: {fileID: 3120396246466388595}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &707884891
 GameObject:
   m_ObjectHideFlags: 0
@@ -1244,17 +1249,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6492289061680505588, guid: b0fdd0184392b254ea040b347a0cf05d, type: 3}
   m_PrefabInstance: {fileID: 5570871069057539752}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &789469574 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 7042371489915766776, guid: b0fdd0184392b254ea040b347a0cf05d, type: 3}
-  m_PrefabInstance: {fileID: 5570871069057539752}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5cad3e0c35205d443bfdda0d37d0cd76, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &792964535
 GameObject:
   m_ObjectHideFlags: 0
@@ -1365,17 +1359,38 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6630396567037219717, guid: ed6055b167d2df34db02f3f2e28c763a, type: 3}
   m_PrefabInstance: {fileID: 3120396246466388595}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &839068886 stripped
+--- !u!114 &839068890
 MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 2815034976548265092, guid: ed6055b167d2df34db02f3f2e28c763a, type: 3}
-  m_PrefabInstance: {fileID: 3120396246466388595}
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 691740530}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5cad3e0c35205d443bfdda0d37d0cd76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  xSpawnOffset: 0
+  ySpawnOffset: 0.1
+  zSpawnOffset: 0
+  medicine: {fileID: 3007208699254843589, guid: 897d8895082db2942ad59be48db74aa8, type: 3}
+  MedicineCreated:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 785807554}
+        m_TargetAssemblyTypeName: RedLightInput, Assembly-CSharp
+        m_MethodName: AddListener
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  isCurrentMed: 0
 --- !u!1 &854203853
 GameObject:
   m_ObjectHideFlags: 0
@@ -1648,6 +1663,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 868280335}
   m_CullTransparentMesh: 1
+--- !u!1 &922393332 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6567014490265947961, guid: 7e8413ab87a76814081c270882fec382, type: 3}
+  m_PrefabInstance: {fileID: 6491482363230999640}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &971428545
 GameObject:
   m_ObjectHideFlags: 0
@@ -2275,7 +2295,7 @@ Transform:
   m_GameObject: {fileID: 1218439569}
   serializedVersion: 2
   m_LocalRotation: {x: -0.7078148, y: -0.0002077785, z: 0.00038408104, w: 0.70639795}
-  m_LocalPosition: {x: 0.328, y: 2.0715, z: -5.148}
+  m_LocalPosition: {x: 0.011, y: 2.0715, z: -5.148}
   m_LocalScale: {x: 0.016420025, y: 0.023083663, z: 0.014594415}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2326,7 +2346,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-      - m_Target: {fileID: 789469574}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
         m_MethodName: set_enabled
         m_Mode: 6
@@ -2338,7 +2358,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 2012473149}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
         m_MethodName: set_enabled
         m_Mode: 6
@@ -2350,7 +2370,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 839068886}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
         m_MethodName: set_enabled
         m_Mode: 6
@@ -2867,7 +2887,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1539520633
 Transform:
   m_ObjectHideFlags: 0
@@ -2989,7 +3009,7 @@ Transform:
   m_GameObject: {fileID: 1583333207}
   serializedVersion: 2
   m_LocalRotation: {x: -0.7078148, y: -0.0002077785, z: 0.00038408104, w: 0.70639795}
-  m_LocalPosition: {x: -0.309, y: 2.0715, z: -5.148}
+  m_LocalPosition: {x: 0.335, y: 2.0715, z: -5.148}
   m_LocalScale: {x: 0.016420025, y: 0.023083663, z: 0.014594415}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3481,8 +3501,8 @@ MonoBehaviour:
   leftPoint: {fileID: 1188607788}
   xPatientDistance: 1.25
   patientTypes:
-  - model: {fileID: 9121066973927270679, guid: 13a324e841ab6724a93f7c84e5b3a68c, type: 3}
-    illness: pimple
+  - model: {fileID: 7667536494780971140, guid: 5e5695cfcfd3b1042a53e4468d4a194b, type: 3}
+    illness: Dirty
     destinationPoint: {x: 0, y: 0, z: 0}
     patientNum: 0
     returnPoint: {fileID: 0}
@@ -3490,8 +3510,8 @@ MonoBehaviour:
     velocity: 0
     acceleration: 0
     stoppingDistance: 0
-  - model: {fileID: 2305443069865191193, guid: 047ae86e5a4bf1f49b45c59e8cf62e36, type: 3}
-    illness: cut
+  - model: {fileID: 7667536494780971140, guid: ed7ab30527f019d42b29d6a45cabb837, type: 3}
+    illness: Sick
     destinationPoint: {x: 0, y: 0, z: 0}
     patientNum: 0
     returnPoint: {fileID: 0}
@@ -3499,8 +3519,8 @@ MonoBehaviour:
     velocity: 0
     acceleration: 0
     stoppingDistance: 0
-  - model: {fileID: 3786133353751364101, guid: 0ca37222a89494c499359706b0bc89b2, type: 3}
-    illness: ache
+  - model: {fileID: 7667536494780971140, guid: 4a3b68f82b0cb3b4c9ec0a7e15f2b274, type: 3}
+    illness: Cut
     destinationPoint: {x: 0, y: 0, z: 0}
     patientNum: 0
     returnPoint: {fileID: 0}
@@ -3550,17 +3570,75 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5646647439961513066, guid: 7e8413ab87a76814081c270882fec382, type: 3}
   m_PrefabInstance: {fileID: 6491482363230999640}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &2012473149 stripped
+--- !u!114 &2012473153
 MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 8058244737107469351, guid: 7e8413ab87a76814081c270882fec382, type: 3}
-  m_PrefabInstance: {fileID: 6491482363230999640}
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 922393332}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5cad3e0c35205d443bfdda0d37d0cd76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  xSpawnOffset: 0
+  ySpawnOffset: 0.1
+  zSpawnOffset: 0
+  medicine: {fileID: 3007208699254843589, guid: d731efbc1f570ee4b99797055b1b376d, type: 3}
+  MedicineCreated:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 785807554}
+        m_TargetAssemblyTypeName: RedLightInput, Assembly-CSharp
+        m_MethodName: AddListener
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  isCurrentMed: 0
+--- !u!1 &2071806864 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2588338583606371333, guid: b0fdd0184392b254ea040b347a0cf05d, type: 3}
+  m_PrefabInstance: {fileID: 5570871069057539752}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2071806868
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2071806864}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5cad3e0c35205d443bfdda0d37d0cd76, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  xSpawnOffset: 0
+  ySpawnOffset: 0.1
+  zSpawnOffset: 0
+  medicine: {fileID: 3007208699254843589, guid: a4531480eed8f5846899c0cabf840f10, type: 3}
+  MedicineCreated:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 785807554}
+        m_TargetAssemblyTypeName: RedLightInput, Assembly-CSharp
+        m_MethodName: AddListener
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  isCurrentMed: 0
 --- !u!1 &2130448597
 GameObject:
   m_ObjectHideFlags: 0
@@ -3676,12 +3754,20 @@ PrefabInstance:
     m_TransformParent: {fileID: 1539520633}
     m_Modifications:
     - target: {fileID: 2815034976548265092, guid: ed6055b167d2df34db02f3f2e28c763a, type: 3}
+      propertyPath: medicine
+      value: 
+      objectReference: {fileID: 3007208699254843589, guid: d731efbc1f570ee4b99797055b1b376d, type: 3}
+    - target: {fileID: 2815034976548265092, guid: ed6055b167d2df34db02f3f2e28c763a, type: 3}
       propertyPath: MedicineCreated.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 785807554}
     - target: {fileID: 4530158363378796919, guid: ed6055b167d2df34db02f3f2e28c763a, type: 3}
       propertyPath: m_Name
       value: Red Box
+      objectReference: {fileID: 0}
+    - target: {fileID: 4530158363378796919, guid: ed6055b167d2df34db02f3f2e28c763a, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6630396567037219717, guid: ed6055b167d2df34db02f3f2e28c763a, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3723,10 +3809,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 2815034976548265092, guid: ed6055b167d2df34db02f3f2e28c763a, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 4530158363378796919, guid: ed6055b167d2df34db02f3f2e28c763a, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 839068890}
   m_SourcePrefab: {fileID: 100100000, guid: ed6055b167d2df34db02f3f2e28c763a, type: 3}
 --- !u!1001 &5570871069057539752
 PrefabInstance:
@@ -3739,6 +3829,10 @@ PrefabInstance:
     - target: {fileID: 2588338583606371333, guid: b0fdd0184392b254ea040b347a0cf05d, type: 3}
       propertyPath: m_Name
       value: Green Box
+      objectReference: {fileID: 0}
+    - target: {fileID: 2588338583606371333, guid: b0fdd0184392b254ea040b347a0cf05d, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6492289061680505588, guid: b0fdd0184392b254ea040b347a0cf05d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3781,13 +3875,21 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7042371489915766776, guid: b0fdd0184392b254ea040b347a0cf05d, type: 3}
+      propertyPath: medicine
+      value: 
+      objectReference: {fileID: 3007208699254843589, guid: 897d8895082db2942ad59be48db74aa8, type: 3}
+    - target: {fileID: 7042371489915766776, guid: b0fdd0184392b254ea040b347a0cf05d, type: 3}
       propertyPath: MedicineCreated.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 785807554}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 7042371489915766776, guid: b0fdd0184392b254ea040b347a0cf05d, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 2588338583606371333, guid: b0fdd0184392b254ea040b347a0cf05d, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2071806868}
   m_SourcePrefab: {fileID: 100100000, guid: b0fdd0184392b254ea040b347a0cf05d, type: 3}
 --- !u!1001 &6491482363230999640
 PrefabInstance:
@@ -3841,14 +3943,26 @@ PrefabInstance:
       propertyPath: m_Name
       value: Blue Box
       objectReference: {fileID: 0}
+    - target: {fileID: 6567014490265947961, guid: 7e8413ab87a76814081c270882fec382, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8058244737107469351, guid: 7e8413ab87a76814081c270882fec382, type: 3}
+      propertyPath: medicine
+      value: 
+      objectReference: {fileID: 3007208699254843589, guid: a4531480eed8f5846899c0cabf840f10, type: 3}
     - target: {fileID: 8058244737107469351, guid: 7e8413ab87a76814081c270882fec382, type: 3}
       propertyPath: MedicineCreated.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 785807554}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8058244737107469351, guid: 7e8413ab87a76814081c270882fec382, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 6567014490265947961, guid: 7e8413ab87a76814081c270882fec382, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2012473153}
   m_SourcePrefab: {fileID: 100100000, guid: 7e8413ab87a76814081c270882fec382, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:

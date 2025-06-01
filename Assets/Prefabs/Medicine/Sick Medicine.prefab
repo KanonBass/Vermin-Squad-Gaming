@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 1855887595170074357}
   - component: {fileID: -7487570935717807610}
   m_Layer: 0
-  m_Name: Red Medicine
+  m_Name: Sick Medicine
   m_TagString: medicine
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -153,7 +153,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   medicinePrefab: {fileID: 3007208699254843589}
-  illnessCured: pimple
+  illnessCured: Sick
   xThrowMult: 2
   yThrowMult: 3
   zThrowMult: 2

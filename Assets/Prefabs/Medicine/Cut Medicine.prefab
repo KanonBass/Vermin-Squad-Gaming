@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: -7040351354023949921}
   - component: {fileID: -3907983477944313784}
   m_Layer: 0
-  m_Name: Blue Medicine
+  m_Name: Cut Medicine
   m_TagString: medicine
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -153,7 +153,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   medicinePrefab: {fileID: 3007208699254843589}
-  illnessCured: cut
+  illnessCured: Cut
   xThrowMult: 2
   yThrowMult: 3
   zThrowMult: 2

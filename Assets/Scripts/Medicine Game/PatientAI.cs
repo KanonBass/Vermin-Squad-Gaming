@@ -2,6 +2,8 @@ using UnityEngine;
 using Unity.AI;
 using UnityEngine.AI;
 using UnityEngine.Events;
+using System.Collections.Generic;
+using NUnit.Framework.Constraints;
 
 /// <summary>
 /// Script to control individual patients
@@ -12,6 +14,8 @@ public class PatientAI : MonoBehaviour
     /// Detail of this patient
     /// </summary>
     private Patient patient;
+
+ 
 
 
     private string collidedMeds;
@@ -63,6 +67,7 @@ public class PatientAI : MonoBehaviour
         //Set the speed and acceleration to the correct values based on the current speed of the game
         agent.speed = patient.velocity;
         agent.acceleration = patient.acceleration;
+
     }
 
     private void Update()
@@ -110,7 +115,17 @@ public class PatientAI : MonoBehaviour
     public void SetPatient(Patient newPatient)
     {
         patient = newPatient;
+
     }
+
+    
+
+    
+    [SerializeField] List<Material> _materials;
+    [SerializeField] int index = 0;
+    [SerializeField] int maxIndex = 1;
+    
+
 
     /// <summary>
     /// Detects when medicine collides with the patient
@@ -123,14 +138,22 @@ public class PatientAI : MonoBehaviour
         {
             collidedMeds = collision.gameObject.GetComponent<NewMedScript>().getIllness();
 
+            MeshRenderer meshRenderer = GetComponent<MeshRenderer>();
+            Material[] tmpMaterials = meshRenderer.materials;
+            
+
             //Checks if the medicine is correct
             if (collidedMeds == patient.illness)
             {
                 CorrectMedicineCollided.Invoke();
+                tmpMaterials[0] = _materials[1];
+                meshRenderer.materials = tmpMaterials;
             }
             else
             {
                 IncorrectMedicineCollided.Invoke();
+                tmpMaterials[0] = _materials[0];
+                meshRenderer.materials = tmpMaterials;
             }
 
             //patient returns to its spawn point
