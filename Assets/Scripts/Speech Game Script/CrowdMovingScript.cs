@@ -5,6 +5,8 @@ using Unity.Mathematics;
 using Unity.AI;
 using UnityEngine.AI;
 using UnityEngine.UIElements;
+using System.Collections.Generic;
+using System;
 
 /// <summary>
 /// Script used to move the crowd in Speech minigame into rows and columns
@@ -14,7 +16,7 @@ public class CrowdMovingScript : MonoBehaviour
     /// <summary>
     /// This is the object the script spawns
     /// </summary>
-    public GameObject CrowdPrefab1;
+    public List<GameObject> Prefab;
 
     /// <summary>
     /// Point on the left side of the stage where inactive crowd gathers
@@ -56,7 +58,7 @@ public class CrowdMovingScript : MonoBehaviour
     [SerializeField] private GameObject pointTracker;
 
     private int totalMembers;
-    private NavMeshAgent[] crowdArray;
+    private GameObject[] crowdArray;
     private int currentMembers;
 
     private float maxScore;
@@ -80,19 +82,19 @@ public class CrowdMovingScript : MonoBehaviour
 
         totalMembers = crowdRowLimit * crowdColumnLimit;
         
-        crowdArray = new NavMeshAgent[totalMembers];
+        crowdArray = new GameObject[totalMembers];
 
         currentPercent = startScore / maxScore;
-        
+
         for (int i = 0; i < totalMembers; i++)
         {
             if (Mathf.Pow(-1f, (float)i) > 0)
             {
-                crowdArray[i] = Instantiate(CrowdPrefab1, leftPointObject.transform.position, Quaternion.identity).GetComponent<NavMeshAgent>();
+                crowdArray[i] = Instantiate(Prefab[UnityEngine.Random.Range(0, Prefab.Count)], leftPointObject.transform.position, Quaternion.identity);
             }
             else
             {
-                crowdArray[i] = Instantiate(CrowdPrefab1, rightPointObject.transform.position, Quaternion.identity).GetComponent<NavMeshAgent>();
+                crowdArray[i] = Instantiate(Prefab[UnityEngine.Random.Range(0, Prefab.Count)], rightPointObject.transform.position, Quaternion.identity);
             }
         }
 
@@ -117,17 +119,17 @@ public class CrowdMovingScript : MonoBehaviour
         {
             if (i <= currentMembers)
             {
-                crowdArray[i].SetDestination(new Vector3(startTransform.position.x - 1 * (crowdColumnOffset * (i%crowdColumnLimit)), startTransform.position.y, startTransform.position.z + 1 * (crowdRowOffset * (Mathf.Floor(i/crowdColumnLimit))))); 
+                crowdArray[i].GetComponent<NavMeshAgent>().SetDestination(new Vector3(startTransform.position.x - 1 * (crowdColumnOffset * (i%crowdColumnLimit)), startTransform.position.y, startTransform.position.z + 1 * (crowdRowOffset * (Mathf.Floor(i/crowdColumnLimit)))));
             }
             else
             {
                 if (Mathf.Pow(-1f, (float)i) > 0)
                 {
-                    crowdArray[i].SetDestination(leftTransform.position);
+                    crowdArray[i].GetComponent<NavMeshAgent>().SetDestination(leftTransform.position);
                 }
                 else
                 {
-                    crowdArray[i].SetDestination(rightTransform.position);
+                    crowdArray[i].GetComponent<NavMeshAgent>().SetDestination(rightTransform.position);
                 }
             }
         }

@@ -882,13 +882,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1b439b619f41f34d941c81bbf098032, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CrowdPrefab1: {fileID: 3007208699254843589, guid: 60313ae5ff9626544bec51c809048263, type: 3}
+  Prefab:
+  - {fileID: 7667536494780971140, guid: 37de294f65f9a604585d4178066520cf, type: 3}
+  - {fileID: 7667536494780971140, guid: 929b36f6b5f2bc34eb847db8679f7e4e, type: 3}
+  - {fileID: 7667536494780971140, guid: c565c2e077989564c951932fe34c72d8, type: 3}
+  - {fileID: 1793529393320458479, guid: 0b58b8f614643cc4a9aa02a4fb950ad0, type: 3}
+  - {fileID: 1793529393320458479, guid: 9a78f0895a65b1d4bbd740e490d5678d, type: 3}
+  - {fileID: 1793529393320458479, guid: 4f33c596062619848a6b33f84f28a6a8, type: 3}
   leftPointObject: {fileID: 276459193}
   rightPointObject: {fileID: 812497864}
   startPointObject: {fileID: 142047724}
   crowdRowLimit: 10
   crowdColumnLimit: 6
-  crowdColumnOffset: 2
+  crowdColumnOffset: 4
   crowdRowOffset: 2
   pointTracker: {fileID: 1161828030}
 --- !u!1 &381752042
@@ -5418,6 +5424,67 @@ MonoBehaviour:
   secondaryText: {fileID: 2102760937}
   button1: {fileID: 2102760940}
   button2: {fileID: 2102760939}
+--- !u!1001 &7002664030602900028
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1416441282852954709, guid: 0b58b8f614643cc4a9aa02a4fb950ad0, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 4.013941
+      objectReference: {fileID: 0}
+    - target: {fileID: 1416441282852954709, guid: 0b58b8f614643cc4a9aa02a4fb950ad0, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2.23
+      objectReference: {fileID: 0}
+    - target: {fileID: 1416441282852954709, guid: 0b58b8f614643cc4a9aa02a4fb950ad0, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -15.29719
+      objectReference: {fileID: 0}
+    - target: {fileID: 1416441282852954709, guid: 0b58b8f614643cc4a9aa02a4fb950ad0, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1416441282852954709, guid: 0b58b8f614643cc4a9aa02a4fb950ad0, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1416441282852954709, guid: 0b58b8f614643cc4a9aa02a4fb950ad0, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1416441282852954709, guid: 0b58b8f614643cc4a9aa02a4fb950ad0, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1416441282852954709, guid: 0b58b8f614643cc4a9aa02a4fb950ad0, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1416441282852954709, guid: 0b58b8f614643cc4a9aa02a4fb950ad0, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1416441282852954709, guid: 0b58b8f614643cc4a9aa02a4fb950ad0, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1793529393320458479, guid: 0b58b8f614643cc4a9aa02a4fb950ad0, type: 3}
+      propertyPath: m_Name
+      value: NPC Male Generic
+      objectReference: {fileID: 0}
+    - target: {fileID: 1793529393320458479, guid: 0b58b8f614643cc4a9aa02a4fb950ad0, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0b58b8f614643cc4a9aa02a4fb950ad0, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -5451,3 +5518,4 @@ SceneRoots:
   - {fileID: 1223460858}
   - {fileID: 601690354}
   - {fileID: 1297721209}
+  - {fileID: 7002664030602900028}

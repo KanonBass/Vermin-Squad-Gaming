@@ -52,9 +52,25 @@ PrefabInstance:
       propertyPath: m_Name
       value: NPC Red
       objectReference: {fileID: 0}
+    - target: {fileID: 1272005903471581010, guid: e39e62858b734ca49ad0bacc655eb7a0, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 55ac31c180933e844afa7158d478417c, type: 2}
+    - target: {fileID: 7197218267494577185, guid: e39e62858b734ca49ad0bacc655eb7a0, type: 3}
+      propertyPath: m_Speed
+      value: 20
+      objectReference: {fileID: 0}
     - target: {fileID: 7197218267494577185, guid: e39e62858b734ca49ad0bacc655eb7a0, type: 3}
       propertyPath: m_AgentTypeID
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7197218267494577185, guid: e39e62858b734ca49ad0bacc655eb7a0, type: 3}
+      propertyPath: m_Acceleration
+      value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: 7197218267494577185, guid: e39e62858b734ca49ad0bacc655eb7a0, type: 3}
+      propertyPath: m_AngularSpeed
+      value: 10000000
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
