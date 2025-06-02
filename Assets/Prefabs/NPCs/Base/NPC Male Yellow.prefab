@@ -13,16 +13,28 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2100000, guid: 37e631fe8edc00f4db90b4d18e59fc37, type: 2}
     - target: {fileID: 6080724521266145129, guid: aa6bc476070bf104d92cb4ab0e994d3f, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.42
+      objectReference: {fileID: 0}
+    - target: {fileID: 6080724521266145129, guid: aa6bc476070bf104d92cb4ab0e994d3f, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.42
+      objectReference: {fileID: 0}
+    - target: {fileID: 6080724521266145129, guid: aa6bc476070bf104d92cb4ab0e994d3f, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.42
+      objectReference: {fileID: 0}
+    - target: {fileID: 6080724521266145129, guid: aa6bc476070bf104d92cb4ab0e994d3f, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 4.013941
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6080724521266145129, guid: aa6bc476070bf104d92cb4ab0e994d3f, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.23
+      value: 1.68
       objectReference: {fileID: 0}
     - target: {fileID: 6080724521266145129, guid: aa6bc476070bf104d92cb4ab0e994d3f, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -15.29719
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6080724521266145129, guid: aa6bc476070bf104d92cb4ab0e994d3f, type: 3}
       propertyPath: m_LocalRotation.w
@@ -52,6 +64,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6080724521266145129, guid: aa6bc476070bf104d92cb4ab0e994d3f, type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6856943809627110867, guid: aa6bc476070bf104d92cb4ab0e994d3f, type: 3}
       propertyPath: m_Name
       value: NPC Male Yellow
@@ -78,7 +94,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 1793529393320458479}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 4.2895765
+  m_Radius: 1
   m_Speed: 20
   m_Acceleration: 40
   avoidancePriority: 50
@@ -88,6 +104,6 @@ NavMeshAgent:
   m_AutoBraking: 1
   m_AutoRepath: 1
   m_Height: 0.66230965
-  m_BaseOffset: 0.33115482
+  m_BaseOffset: 1.68
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
