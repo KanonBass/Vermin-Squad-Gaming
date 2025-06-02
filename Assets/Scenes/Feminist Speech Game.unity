@@ -2396,9 +2396,9 @@ MonoBehaviour:
     - {fileID: 21300000, guid: da7219745f053a544a3f3a4f7881da1f, type: 3}
     - {fileID: 21300000, guid: 294413ff4fa9b5c4aace34d98794c67c, type: 3}
     Descriptions:
-    - This 1
-    - This 2
-    - This 3
+    - Inequality
+    - No Contraception
+    - Women's Sufferage
     CorrectOption: 3
     score: 2
   - Option: '        Option1                                             Option2                                           
@@ -2408,9 +2408,9 @@ MonoBehaviour:
     - {fileID: 21300000, guid: 746d23b4b4dea0c428563d309b734cf9, type: 3}
     - {fileID: 21300000, guid: f6630529fc58104478bff639d2e7a85d, type: 3}
     Descriptions:
-    - Fuck
-    - You
-    - Bitch
+    - No Freedoms
+    - Women's Education
+    - Women Can Divorce
     CorrectOption: 2
     score: 2
   - Option: '        Option1                                             Option2                                           
@@ -2420,9 +2420,9 @@ MonoBehaviour:
     - {fileID: 21300000, guid: 06b0c1f078583564c991d52034413730, type: 3}
     - {fileID: 21300000, guid: 5f3cf32db0ab9cf4babbb827e5211128, type: 3}
     Descriptions:
-    - Kiss
-    - My
-    - Ass
+    - Women Own Property
+    - Women Wearing Pants
+    - Stay at Home Wives
     CorrectOption: 1
     score: 2
   options:
@@ -3437,7 +3437,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 335a937ddffbaab419d4e158bdc30f3f, type: 2}
+  - {fileID: 2100000, guid: 39002cfdffc9baf4d80e8e79800d71e8, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

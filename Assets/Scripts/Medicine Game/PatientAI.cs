@@ -133,16 +133,18 @@ public class PatientAI : MonoBehaviour
     /// <param name="collision"></param>
     public void OnCollisionEnter(Collision collision)
     {
+        Debug.Log("Checking collision: " + isMedicated + ", " + collision.gameObject.CompareTag("medicine"));
+
         //Need to make sure that the patient hasn't already been medicated and that it is colliding with medicine
         if (!isMedicated && collision.gameObject.CompareTag("medicine"))
         {
             collidedMeds = collision.gameObject.GetComponent<NewMedScript>().getIllness();
-
             MeshRenderer meshRenderer = GetComponent<MeshRenderer>();
             Material[] tmpMaterials = meshRenderer.materials;
-            
+
 
             //Checks if the medicine is correct
+            
             if (collidedMeds == patient.illness)
             {
                 CorrectMedicineCollided.Invoke();
@@ -155,6 +157,7 @@ public class PatientAI : MonoBehaviour
                 tmpMaterials[0] = _materials[0];
                 meshRenderer.materials = tmpMaterials;
             }
+
 
             //patient returns to its spawn point
             isLeaving = true;
