@@ -118,7 +118,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   _materials:
-  - {fileID: 2100000, guid: e73c53cb68790244d89130b5c363d056, type: 2}
   - {fileID: 2100000, guid: de1d4532526aaa545a45b25dd90ab868, type: 2}
+  - {fileID: 2100000, guid: e73c53cb68790244d89130b5c363d056, type: 2}
   index: 0
   maxIndex: 1
