@@ -2186,7 +2186,7 @@ Transform:
   m_GameObject: {fileID: 1188607788}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.21, y: 1.082, z: -2.71}
+  m_LocalPosition: {x: -1.46, y: 1.082, z: -2.71}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3499,9 +3499,9 @@ MonoBehaviour:
   leftSpawn: {fileID: 2130448597}
   rightSpawn: {fileID: 1398813164}
   leftPoint: {fileID: 1188607788}
-  xPatientDistance: 1.25
+  xPatientDistance: 1.5
   patientTypes:
-  - model: {fileID: 7667536494780971140, guid: 5e5695cfcfd3b1042a53e4468d4a194b, type: 3}
+  - model: {fileID: 3787070400494966551, guid: 803cf33599a7e9e41baa7eddbc761b2e, type: 3}
     illness: Dirty
     destinationPoint: {x: 0, y: 0, z: 0}
     patientNum: 0
@@ -3510,7 +3510,7 @@ MonoBehaviour:
     velocity: 0
     acceleration: 0
     stoppingDistance: 0
-  - model: {fileID: 7667536494780971140, guid: ed7ab30527f019d42b29d6a45cabb837, type: 3}
+  - model: {fileID: 3787070400494966551, guid: 3818f35149b64964b86f42810c500294, type: 3}
     illness: Sick
     destinationPoint: {x: 0, y: 0, z: 0}
     patientNum: 0
@@ -3519,7 +3519,7 @@ MonoBehaviour:
     velocity: 0
     acceleration: 0
     stoppingDistance: 0
-  - model: {fileID: 7667536494780971140, guid: 4a3b68f82b0cb3b4c9ec0a7e15f2b274, type: 3}
+  - model: {fileID: 3787070400494966551, guid: 9b640fe6a5a02254290b7dd4afa83d75, type: 3}
     illness: Cut
     destinationPoint: {x: 0, y: 0, z: 0}
     patientNum: 0
