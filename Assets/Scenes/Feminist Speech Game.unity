@@ -2406,18 +2406,18 @@ MonoBehaviour:
     Answers:
     - {fileID: 21300000, guid: 6c7e556adef68034c980ad27c336c056, type: 3}
     - {fileID: 21300000, guid: 746d23b4b4dea0c428563d309b734cf9, type: 3}
-    - {fileID: 21300000, guid: f6630529fc58104478bff639d2e7a85d, type: 3}
+    - {fileID: 21300000, guid: 1dfb0b63481f2474b8ea4c83c586c971, type: 3}
     Descriptions:
     - No Freedoms
     - Women's Education
-    - Women Can Divorce
+    - Women Cannot Divorce
     CorrectOption: 2
     score: 2
   - Option: '        Option1                                             Option2                                           
       Option3'
     Answers:
     - {fileID: 21300000, guid: ea3b2f4722a41b04786de53e622bd71e, type: 3}
-    - {fileID: 21300000, guid: 06b0c1f078583564c991d52034413730, type: 3}
+    - {fileID: 21300000, guid: f6630529fc58104478bff639d2e7a85d, type: 3}
     - {fileID: 21300000, guid: 5f3cf32db0ab9cf4babbb827e5211128, type: 3}
     Descriptions:
     - Women Own Property
