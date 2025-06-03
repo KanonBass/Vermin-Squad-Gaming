@@ -2398,7 +2398,7 @@ MonoBehaviour:
     Descriptions:
     - Inequality
     - No Contraception
-    - Women's Sufferage
+    - Voting Rights
     CorrectOption: 3
     score: 2
   - Option: '        Option1                                             Option2                                           
@@ -2421,7 +2421,7 @@ MonoBehaviour:
     - {fileID: 21300000, guid: 5f3cf32db0ab9cf4babbb827e5211128, type: 3}
     Descriptions:
     - Women Own Property
-    - Women Wearing Pants
+    - Women Can't Wear Pants
     - Stay at Home Wives
     CorrectOption: 1
     score: 2
