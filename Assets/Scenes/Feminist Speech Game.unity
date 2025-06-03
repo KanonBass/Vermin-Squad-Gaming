@@ -4675,7 +4675,7 @@ GameObject:
   - component: {fileID: 1607207940}
   - component: {fileID: 1607207939}
   m_Layer: 0
-  m_Name: Cube (5)
+  m_Name: Ceiling
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4725,7 +4725,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 761aa0d596ef05a4da320adbaaa9b4f7, type: 2}
+  - {fileID: 2100000, guid: 3bc31e983c3cdb74192b61466d74170e, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -6027,18 +6027,5 @@ SceneRoots:
   - {fileID: 1092910055}
   - {fileID: 1178569797}
   - {fileID: 1989648494}
-  - {fileID: 4892214358906167043}
   - {fileID: 1822813276}
-  - {fileID: 402506236}
-  - {fileID: 1373465134}
-  - {fileID: 2004656258}
-  - {fileID: 1139793149}
-  - {fileID: 526071730}
-  - {fileID: 1654162428}
-  - {fileID: 1618643901}
-  - {fileID: 392781888}
-  - {fileID: 52655038}
-  - {fileID: 1223460858}
-  - {fileID: 601690354}
-  - {fileID: 1297721209}
   - {fileID: 7002664030602900028}
