@@ -169,10 +169,18 @@ public class NewMedScript : MonoBehaviour
     /// <param name="collision"></param>
     private void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.CompareTag("Patient"))
+        Debug.Log("Pre Change Medicine: " + hasHit);
+        if (collision.gameObject.CompareTag("Patient") && !hasHit)
         {
             hasHit = true;
             thisCollider.enabled = false;
+            Debug.Log("Medicine Has Hit: " + hasHit);
         }
+    }
+
+    public bool GetHit()
+    {
+        Debug.Log("Returning Has Hit" + hasHit);
+        return hasHit;
     }
 }
