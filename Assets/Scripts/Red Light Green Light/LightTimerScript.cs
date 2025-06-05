@@ -7,7 +7,6 @@ using UnityEngine.Events;
 /// </summary>
 public class LightTimerScript : MonoBehaviour
 {
-    
     private float currentTime = 0;
     private float maxTime;
     private float totalTime = 0;
