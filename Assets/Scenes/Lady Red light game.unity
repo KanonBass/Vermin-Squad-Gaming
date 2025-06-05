@@ -1354,7 +1354,7 @@ PrefabInstance:
     - target: {fileID: -4683669308469848369, guid: fa77443a7e868b3459f90398097a11ac, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: f3f7498e5a6c2db4aad4ea56c3904692, type: 2}
+      objectReference: {fileID: 2100000, guid: 7cd5dd52e76fde341b2c06513dfbcbed, type: 2}
     - target: {fileID: 919132149155446097, guid: fa77443a7e868b3459f90398097a11ac, type: 3}
       propertyPath: m_Name
       value: Window Auto Smooth 2 applied (3)
@@ -2023,7 +2023,7 @@ PrefabInstance:
     - target: {fileID: -4683669308469848369, guid: fa77443a7e868b3459f90398097a11ac, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: f3f7498e5a6c2db4aad4ea56c3904692, type: 2}
+      objectReference: {fileID: 2100000, guid: 7cd5dd52e76fde341b2c06513dfbcbed, type: 2}
     - target: {fileID: 919132149155446097, guid: fa77443a7e868b3459f90398097a11ac, type: 3}
       propertyPath: m_Name
       value: Window Auto Smooth 2 applied (2)
@@ -2666,7 +2666,7 @@ PrefabInstance:
     - target: {fileID: -4683669308469848369, guid: fa77443a7e868b3459f90398097a11ac, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: f3f7498e5a6c2db4aad4ea56c3904692, type: 2}
+      objectReference: {fileID: 2100000, guid: 7cd5dd52e76fde341b2c06513dfbcbed, type: 2}
     - target: {fileID: 919132149155446097, guid: fa77443a7e868b3459f90398097a11ac, type: 3}
       propertyPath: m_Name
       value: Window Auto Smooth 2 applied (1)
