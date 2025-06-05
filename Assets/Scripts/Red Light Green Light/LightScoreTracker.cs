@@ -7,6 +7,9 @@ using UnityEngine.InputSystem;
 /// </summary>
 public class LightScoreScript : ScoreTracker
 {
+    public GameObject Book;
+    public GameObject OpenBook;
+    public GameObject Bookparticles;
     //Used to keep track of when the button is pressed, meaning the player is reading
     private static bool reading = false;
 
@@ -38,10 +41,16 @@ public class LightScoreScript : ScoreTracker
         if (reading)
         {
             UpdateScore(Time.deltaTime*gainPointMult);
+            Book.SetActive(false);
+            OpenBook.SetActive(true);
+            Bookparticles.SetActive(true);
         }
         else if(GetScore() > GetMinScore()) 
         {
             UpdateScore(-Time.deltaTime*losePointMult);
+            Book.SetActive(true);
+            OpenBook.SetActive(false);
+            Bookparticles.SetActive(false);
         }
 
         //This is called every frame to send out the current proportion of the score to the score bar, which is then filled based on this proportion

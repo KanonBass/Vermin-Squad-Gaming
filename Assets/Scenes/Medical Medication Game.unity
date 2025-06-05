@@ -319,7 +319,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!81 &121308796
 AudioListener:
   m_ObjectHideFlags: 0
@@ -1260,7 +1260,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 397, y: 129}
-  m_SizeDelta: {x: 200, y: 50}
+  m_SizeDelta: {x: 343.9, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &579751283
 MonoBehaviour:
@@ -1282,7 +1282,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Select the correct medicine and hold down
+  m_text: Click and hold on the medicine's crate to select the medicine
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 2e43313cece68344c8e70312063644f6, type: 2}
   m_sharedMaterial: {fileID: 48392267004083781, guid: 2e43313cece68344c8e70312063644f6, type: 2}
@@ -1309,8 +1309,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 31.2
+  m_fontSizeBase: 31.2
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -1677,7 +1677,6 @@ Transform:
   - {fileID: 2118541989}
   - {fileID: 573408059}
   - {fileID: 1981336126}
-  - {fileID: 1697720827}
   - {fileID: 609252342}
   - {fileID: 1870890416}
   m_Father: {fileID: 0}
@@ -2045,8 +2044,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -269, y: 129}
-  m_SizeDelta: {x: 200, y: 50}
+  m_AnchoredPosition: {x: -217, y: 129}
+  m_SizeDelta: {x: 338.2, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &854203855
 MonoBehaviour:
@@ -2068,7 +2067,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Patients Will come in sick
+  m_text: Patients enter with an issue. You must decide the correct medicine to give
+    them
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 2e43313cece68344c8e70312063644f6, type: 2}
   m_sharedMaterial: {fileID: 48392267004083781, guid: 2e43313cece68344c8e70312063644f6, type: 2}
@@ -2095,8 +2095,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 31.2
+  m_fontSizeBase: 31.2
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -2181,8 +2181,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -310, y: -241}
-  m_SizeDelta: {x: 200, y: 50}
+  m_AnchoredPosition: {x: -324, y: -223}
+  m_SizeDelta: {x: 162.7, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &868280337
 MonoBehaviour:
@@ -2204,7 +2204,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Aim at the patient and release to give the medicine
+  m_text: Drag to the patient and release to give them the medicine
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 2e43313cece68344c8e70312063644f6, type: 2}
   m_sharedMaterial: {fileID: 48392267004083781, guid: 2e43313cece68344c8e70312063644f6, type: 2}
@@ -2231,8 +2231,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 31.2
+  m_fontSizeBase: 31.2
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -2269,7 +2269,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -141.86401, y: 0, z: -107.368774, w: 0}
+  m_margin: {x: -141.86401, y: 0, z: -220.19604, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -2322,8 +2322,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 406, y: -243}
-  m_SizeDelta: {x: 200, y: 50}
+  m_AnchoredPosition: {x: 390, y: -226}
+  m_SizeDelta: {x: 282, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &971428547
 MonoBehaviour:
@@ -2345,7 +2345,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Make as many patients happy as you can!
+  m_text: Giving them the right medicine increase your score, the incorrect one loses
+    a life
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 2e43313cece68344c8e70312063644f6, type: 2}
   m_sharedMaterial: {fileID: 48392267004083781, guid: 2e43313cece68344c8e70312063644f6, type: 2}
@@ -2372,8 +2373,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 31.2
+  m_fontSizeBase: 31.2
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -3638,7 +3639,7 @@ PrefabInstance:
     - target: {fileID: -4683669308469848369, guid: fa77443a7e868b3459f90398097a11ac, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: 87a0fbaa4e1074a45b934c0938e1a272, type: 2}
+      objectReference: {fileID: 2100000, guid: 7cd5dd52e76fde341b2c06513dfbcbed, type: 2}
     - target: {fileID: 919132149155446097, guid: fa77443a7e868b3459f90398097a11ac, type: 3}
       propertyPath: m_Name
       value: Window Auto Smooth 2 applied (2)
@@ -3770,7 +3771,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1539520633
 Transform:
   m_ObjectHideFlags: 0
@@ -3856,7 +3857,7 @@ PrefabInstance:
     - target: {fileID: -4683669308469848369, guid: fa77443a7e868b3459f90398097a11ac, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: 87a0fbaa4e1074a45b934c0938e1a272, type: 2}
+      objectReference: {fileID: 2100000, guid: 7cd5dd52e76fde341b2c06513dfbcbed, type: 2}
     - target: {fileID: 919132149155446097, guid: fa77443a7e868b3459f90398097a11ac, type: 3}
       propertyPath: m_Name
       value: Window Auto Smooth 2 applied (1)
@@ -4178,114 +4179,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 2f8547eeb5775194793728478cc61ad7, type: 3}
   m_PrefabInstance: {fileID: 2057014559}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1697720826
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1697720827}
-  - component: {fileID: 1697720830}
-  - component: {fileID: 1697720829}
-  - component: {fileID: 1697720828}
-  m_Layer: 0
-  m_Name: Painting
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1697720827
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1697720826}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 1, w: 0}
-  m_LocalPosition: {x: -4.35, y: 3.351, z: 4.119}
-  m_LocalScale: {x: 2.6082716, y: 1.7706097, z: 0.051657}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 739763621}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 180}
---- !u!65 &1697720828
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1697720826}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!23 &1697720829
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1697720826}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
-  m_RayTracingAccelStructBuildFlagsOverride: 0
-  m_RayTracingAccelStructBuildFlags: 1
-  m_SmallMeshCulling: 1
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 2100000, guid: 8036c2ea1ba66f140938363e2421b53c, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_AdditionalVertexStreams: {fileID: 0}
---- !u!33 &1697720830
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1697720826}
-  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1001 &1700147269
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4900,9 +4793,9 @@ MonoBehaviour:
     acceleration: 0
     stoppingDistance: 0
   defaultMaxTime: 7
-  maxTimeSpeedMultiplier: 0.6
+  maxTimeSpeedMultiplier: 0.4
   baseVelocity: 5
-  velocitySpeedMultiplier: 5
+  velocitySpeedMultiplier: 2.5
   PatientSpawned:
     m_PersistentCalls:
       m_Calls: []
@@ -5723,7 +5616,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 4af41d28a0f5f5a4786079febb381272, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 01a9b3207cdde8b4d964a28e388f4715, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
