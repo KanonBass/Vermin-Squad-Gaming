@@ -65,6 +65,8 @@ public class NewMedScript : MonoBehaviour
     private float hitLifetime = 0;
     private bool hasHit = false;
 
+    private Vector3 spawnPostion;
+
     private void Awake()
     {
         //Gets the collider and rigid body of this object
@@ -77,6 +79,7 @@ public class NewMedScript : MonoBehaviour
 
     private void Start()
     {
+        spawnPostion = transform.position;
         cam = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<Camera>();
         startPosition = transform.position;
 
@@ -86,7 +89,16 @@ public class NewMedScript : MonoBehaviour
     }
 
     private void Update()
-    {
+    {   
+        //Point variable tracks the mouse position and offsets the vector on the Z plane by 3
+        Vector3 point = new Vector3();
+        point = cam.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, .3f));
+
+        //A bit of mathh uses point variable and spawn position variable to make the medicine slide a little to follow the mouce
+        if (!hasReleased)
+        {
+            transform.position = new Vector3(spawnPostion.x + (point.x * .15f), spawnPostion.y, spawnPostion.z + (point.y * .1f) - .25f);
+        }
         //If the player has thrown the medicine then this tracks when it should despawn
         if (hasReleased)
         {
@@ -106,6 +118,7 @@ public class NewMedScript : MonoBehaviour
             }
         }
     }
+
 
     /// <summary>
     /// Used to change the released variable of the medicine and throw it
