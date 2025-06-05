@@ -11,6 +11,8 @@ public class MedicineLifeTracker : MonoBehaviour
 
     public UnityEvent<string> NewTotal;
 
+    [SerializeField] private AudioSource WrongAudio;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -22,6 +24,8 @@ public class MedicineLifeTracker : MonoBehaviour
     {
         currentlives--;
         NewTotal?.Invoke("Lives: " + currentlives);
+        WrongAudio.Play();
+
 
         if (currentlives == 0)
         {
