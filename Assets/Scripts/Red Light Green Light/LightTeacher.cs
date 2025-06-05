@@ -7,6 +7,9 @@ using UnityEngine.Events;
 /// </summary>
 public class LightTeacher : MonoBehaviour
 {
+   // public GameObject Book;
+   // public GameObject OpenBook;
+ 
     /// <summary>
     /// Is the teacher looking at the player
     /// </summary>
@@ -38,6 +41,8 @@ public class LightTeacher : MonoBehaviour
         ColorUtility.TryParseHtmlString("#33A93D", out greenColor);
         ColorUtility.TryParseHtmlString("#9F0400", out redColor);
         TeacherColorChange(false);
+       // Book.SetActive(true);
+       // OpenBook.SetActive(false);
     }
 
     /// <summary>
@@ -56,6 +61,9 @@ public class LightTeacher : MonoBehaviour
     public void ChangeInputState(bool newState)
     {
         reading = newState;
+        //Book.SetActive(false);
+       // OpenBook.SetActive(true);
+
     }
 
     /// <summary>
