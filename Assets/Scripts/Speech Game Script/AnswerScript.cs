@@ -8,7 +8,10 @@ public class AnswerScript : MonoBehaviour
     public OptionManager optionManager;
     public UnityEvent<float> optionSelected;
     [SerializeField] private float scoreValue = 2;
-    
+    [SerializeField] private AudioSource CheerAudio;
+    [SerializeField] private AudioSource BooAudio;
+
+
     public void Answer()
     {
         if (isCorrect)
@@ -16,8 +19,10 @@ public class AnswerScript : MonoBehaviour
             optionSelected?.Invoke(scoreValue);
             Debug.Log("Correct Answer");
             optionManager.Correct();
+            CheerAudio.Play();
+            BooAudio.Stop();
 
-            
+
 
         }
         else
@@ -25,7 +30,8 @@ public class AnswerScript : MonoBehaviour
             optionSelected?.Invoke(-scoreValue);
             Debug.Log("Wrong Answer");
             optionManager.Correct();
-            
+            BooAudio.Play();
+            CheerAudio.Stop();
         }
 }
 }
