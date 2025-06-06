@@ -1145,9 +1145,9 @@ MonoBehaviour:
   - In my later years I was a feminist. I gave speeches to help spread my progressive
     ideas.\n\nHelp me give a speech and gather as large of a crowd as possible
   gameImages:
-  - {fileID: 21300000, guid: 746d23b4b4dea0c428563d309b734cf9, type: 3}
-  - {fileID: 21300000, guid: ea3b2f4722a41b04786de53e622bd71e, type: 3}
-  - {fileID: 21300000, guid: 2db4aaa655982df4ca17b51a461b996e, type: 3}
+  - {fileID: 21300000, guid: b624588f6552674489aacbbc8e01d327, type: 3}
+  - {fileID: 21300000, guid: 8504d9668dd4d8c47a494ba5c761f167, type: 3}
+  - {fileID: 21300000, guid: 65a9b27e4cd545c46a3ea4070cbc3c47, type: 3}
 --- !u!1 &852467864
 GameObject:
   m_ObjectHideFlags: 0
