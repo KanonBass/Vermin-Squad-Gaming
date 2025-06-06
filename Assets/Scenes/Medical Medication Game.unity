@@ -1991,7 +1991,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   xSpawnOffset: 0
-  ySpawnOffset: 0.1
+  ySpawnOffset: 0.13
   zSpawnOffset: 0
   medicine: {fileID: 3007208699254843589, guid: 897d8895082db2942ad59be48db74aa8, type: 3}
   MedicineCreated:
@@ -4993,7 +4993,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   xSpawnOffset: 0
-  ySpawnOffset: 0.1
+  ySpawnOffset: 0.13
   zSpawnOffset: 0
   medicine: {fileID: 3007208699254843589, guid: d731efbc1f570ee4b99797055b1b376d, type: 3}
   MedicineCreated:
@@ -5288,7 +5288,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   xSpawnOffset: 0
-  ySpawnOffset: 0.1
+  ySpawnOffset: 0.13
   zSpawnOffset: 0
   medicine: {fileID: 3007208699254843589, guid: a4531480eed8f5846899c0cabf840f10, type: 3}
   MedicineCreated:
