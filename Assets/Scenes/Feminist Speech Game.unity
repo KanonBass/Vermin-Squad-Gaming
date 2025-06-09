@@ -3116,6 +3116,30 @@ MonoBehaviour:
     - Stay at Home Wives
     CorrectOption: 1
     score: 2
+  - Option: '        Option1                                             Option2                                           
+      Option3'
+    Answers:
+    - {fileID: 21300000, guid: e6aecdc6be7039848a53cc1f5eab2218, type: 3}
+    - {fileID: 21300000, guid: 73c1607afa02b394ebadeec0d23a62ef, type: 3}
+    - {fileID: 21300000, guid: 48568c56e136a9d4ba2dc8a0bbd8c386, type: 3}
+    Descriptions:
+    - Women Can't Buy Alcohol
+    - Women Can Speak Publically
+    - Women Can't Do Sports
+    CorrectOption: 2
+    score: 2
+  - Option: '        Option1                                             Option2                                           
+      Option3'
+    Answers:
+    - {fileID: 21300000, guid: 4416e214de4250e4d911208f8fe479a2, type: 3}
+    - {fileID: 21300000, guid: f54db0114c9915a40a771c49771a2922, type: 3}
+    - {fileID: 21300000, guid: 2d96430894be29c45b7a3faaca64e396, type: 3}
+    Descriptions:
+    - Women Can Be Independent
+    - Women Can't Read In Public
+    - Women Can't Pursue Careers
+    CorrectOption: 1
+    score: 2
   options:
   - {fileID: 1632603021}
   - {fileID: 312541580}
