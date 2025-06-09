@@ -6,6 +6,7 @@ using UnityEngine.Events;
 /// </summary>
 public class MedicineScoreSciprt : ScoreTracker
 {
+    [SerializeField] private AudioSource RightAudio;
     /// <summary>
     /// How much the score increases at the start of the game
     /// </summary>
@@ -34,6 +35,7 @@ public class MedicineScoreSciprt : ScoreTracker
     {
         UpdateScore(baseScoreIncrease + (currentSpeed * speedMultiplier));
         NewScore?.Invoke("Score: " + (int)GetScore());
+        RightAudio.Play();
     }
 
     /// <summary>

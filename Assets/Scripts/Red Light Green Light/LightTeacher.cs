@@ -7,9 +7,11 @@ using UnityEngine.Events;
 /// </summary>
 public class LightTeacher : MonoBehaviour
 {
-   // public GameObject Book;
-   // public GameObject OpenBook;
- 
+    [SerializeField] public AudioSource SpeakingAudio;
+    [SerializeField] public AudioSource TurnAudio;
+    
+
+
     /// <summary>
     /// Is the teacher looking at the player
     /// </summary>
@@ -61,9 +63,7 @@ public class LightTeacher : MonoBehaviour
     public void ChangeInputState(bool newState)
     {
         reading = newState;
-        //Book.SetActive(false);
-       // OpenBook.SetActive(true);
-
+        
     }
 
     /// <summary>
@@ -97,6 +97,8 @@ public class LightTeacher : MonoBehaviour
             tmpMaterials[0] = _materials[1];
             meshRenderer.materials = tmpMaterials;
             transform.rotation = new quaternion(0,0,0,0);
+            SpeakingAudio.Stop();
+            TurnAudio.Play();
 
         }
         else
@@ -105,6 +107,7 @@ public class LightTeacher : MonoBehaviour
             tmpMaterials[0] = _materials[0];
             meshRenderer.materials = tmpMaterials;
             transform.rotation = new quaternion(0, -180, 0, 0);
+            SpeakingAudio.Play();
 
         }
     }

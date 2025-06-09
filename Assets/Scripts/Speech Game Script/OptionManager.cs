@@ -18,7 +18,7 @@ public class OptionManager : MonoBehaviour
     public UnityEvent TimeOut;
 
 
-
+ 
     public TextMeshProUGUI OptionTxt;
     public TextMeshProUGUI ScoreTxt;
     public TextMeshProUGUI LosingTxt;
@@ -79,6 +79,7 @@ public class OptionManager : MonoBehaviour
             {
                 Debug.Log(randomAnswer + " is correct");
                 options[i].GetComponent<AnswerScript>().isCorrect = true;
+               
             }
         }
     }

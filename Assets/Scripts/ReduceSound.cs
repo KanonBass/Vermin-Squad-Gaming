@@ -1,10 +1,13 @@
+using NUnit.Framework;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Rendering.Universal;
 
+
 public class ReduceSound : MonoBehaviour
 {
-    [SerializeField] GameObject audioSource;
-    private AudioSource source;
+    [SerializeField] List<AudioSource> audioSource;
+   // private  List<AudioSource> source;
 
     [SerializeField] private float audioIncreaseRate;
     [SerializeField] private float audioDecreaseRate;
@@ -15,19 +18,27 @@ public class ReduceSound : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        source = audioSource.GetComponent<AudioSource>();
+        
+      /*  for (int i = 0; i < audioSource.Count; i++)
+        {
+            source[i] = audioSource[i].GetComponent<AudioSource>();
+        }*/
     }
 
     void Update()
     {
-        if (isPressed && (source.volume > minVolume))
+        for (int i = 0; i < audioSource.Count; i++)
         {
-            source.volume -= audioDecreaseRate * Time.deltaTime;
+            if (isPressed && (audioSource[i].volume > minVolume))
+            {
+                audioSource[i].volume -= audioDecreaseRate * Time.deltaTime;
+            }
+            else if (audioSource[i].volume < maxVolume)
+            {
+                audioSource[i].volume += audioIncreaseRate * Time.deltaTime;
+            }
         }
-        else if (source.volume < maxVolume)
-        {
-            source.volume += audioIncreaseRate * Time.deltaTime;
-        }
+        
     }
 
     public void ChangePressState(bool newState)

@@ -65,6 +65,7 @@ public class CrowdMovingScript : MonoBehaviour
     private float currentScore;
     private float startScore;
     private float currentPercent;
+   
 
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -91,6 +92,7 @@ public class CrowdMovingScript : MonoBehaviour
             if (Mathf.Pow(-1f, (float)i) > 0)
             {
                 crowdArray[i] = Instantiate(Prefab[UnityEngine.Random.Range(0, Prefab.Count)], leftPointObject.transform.position, Quaternion.identity);
+              
             }
             else
             {
