@@ -3033,9 +3033,9 @@ MonoBehaviour:
     - {fileID: 21300000, guid: da7219745f053a544a3f3a4f7881da1f, type: 3}
     - {fileID: 21300000, guid: 294413ff4fa9b5c4aace34d98794c67c, type: 3}
     Descriptions:
-    - Inequality
-    - No Contraception
-    - Voting Rights
+    - Women are Better
+    - Ban Contraception
+    - Women's Voting Rights
     CorrectOption: 3
     score: 2
   - Option: '        Option1                                             Option2                                           
@@ -3045,9 +3045,9 @@ MonoBehaviour:
     - {fileID: 21300000, guid: 746d23b4b4dea0c428563d309b734cf9, type: 3}
     - {fileID: 21300000, guid: 1dfb0b63481f2474b8ea4c83c586c971, type: 3}
     Descriptions:
-    - No Freedoms
+    - No Freedom
     - Women's Education
-    - Women Cannot Divorce
+    - Women Shouldn't Divorce
     CorrectOption: 2
     score: 2
   - Option: '        Option1                                             Option2                                           
