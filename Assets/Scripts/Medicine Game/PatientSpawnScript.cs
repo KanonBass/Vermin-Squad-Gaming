@@ -143,7 +143,7 @@ public class PatientSpawnScript : MonoBehaviour
             newPatient.maxTime = 999999;
         }
 
-        newPatient.velocity = math.min(baseVelocity + (Mathf.Sqrt(currentSpeed * velocitySpeedMultiplier)), 15);
+        newPatient.velocity = math.min(baseVelocity + (Mathf.Sqrt(currentSpeed * velocitySpeedMultiplier)), 13.5f);
         Debug.Log("Velocity: " + newPatient.velocity);
         newPatient.acceleration = newPatient.velocity * 2;
 
