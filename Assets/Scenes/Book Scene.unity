@@ -1309,9 +1309,9 @@ MonoBehaviour:
   - In my later years I was a feminist. I gave speeches to help spread my progressive
     ideas.\n\nSelect options I would support to help me gather a crowd!
   gameImages:
-  - {fileID: 21300000, guid: 746d23b4b4dea0c428563d309b734cf9, type: 3}
-  - {fileID: 21300000, guid: ea3b2f4722a41b04786de53e622bd71e, type: 3}
-  - {fileID: 21300000, guid: 2db4aaa655982df4ca17b51a461b996e, type: 3}
+  - {fileID: 21300000, guid: b624588f6552674489aacbbc8e01d327, type: 3}
+  - {fileID: 21300000, guid: 8504d9668dd4d8c47a494ba5c761f167, type: 3}
+  - {fileID: 21300000, guid: b48d5827f7baf6442809554db56ce5e7, type: 3}
 --- !u!1 &852467864
 GameObject:
   m_ObjectHideFlags: 0
@@ -3744,7 +3744,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 746d23b4b4dea0c428563d309b734cf9, type: 3}
+  m_Sprite: {fileID: 21300000, guid: b624588f6552674489aacbbc8e01d327, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -3774,7 +3774,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cfabb0440166ab443bba8876756fdfa9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_EffectColor: {r: 0, g: 0, b: 0, a: 0.5}
+  m_EffectColor: {r: 0.34509805, g: 0.21176472, b: 0.21176472, a: 0.5}
   m_EffectDistance: {x: 0, y: -3.97}
   m_UseGraphicAlpha: 1
 --- !u!1 &2111915661
