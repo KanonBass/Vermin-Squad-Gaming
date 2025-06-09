@@ -40,24 +40,12 @@ MonoBehaviour:
 '
     m_Metadata:
       m_Items: []
-  - m_Id: 14039947984896
-    m_Localized: Opnieuw proberen
-    m_Metadata:
-      m_Items: []
-  - m_Id: 15038225891328
-    m_Localized: Je hebt ze genezen!
-    m_Metadata:
-      m_Items: []
-  - m_Id: 15415453204480
-    m_Localized: Je hebt gefaald
-    m_Metadata:
-      m_Items: []
   - m_Id: 15543954096128
-    m_Localized: Je hebt gewonnen!
+    m_Localized: Gewonnen!
     m_Metadata:
       m_Items: []
   - m_Id: 15598513602560
-    m_Localized: Je hebt verloren
+    m_Localized: Verloren...
     m_Metadata:
       m_Items: []
   - m_Id: 15801291423744
@@ -69,8 +57,8 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 18346827104256
-    m_Localized: "Patienten komen binnen met een probleem. Kies \nhet juiste geneesmiddel
-      om ze te genezen"
+    m_Localized: Patienten komen binnen met een probleem. Kies het juiste geneesmiddel
+      om ze te genezen
     m_Metadata:
       m_Items: []
   - m_Id: 18371963568128
@@ -79,17 +67,13 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 18389059551232
-    m_Localized: 'Sleep het geneesmiddel naar de patient en laat los
-
-      om de
-      geneesmiddel te geven'
+    m_Localized: Sleep het geneesmiddel naar de patient en laat los om de geneesmiddel
+      te geven
     m_Metadata:
       m_Items: []
   - m_Id: 18406990200832
-    m_Localized: 'Als je het goede geneesmiddel geeft gaat je score omhoog,
-
-      het
-      verkeerde geneesmiddel laat je een leven verliezen'
+    m_Localized: Als je het goede geneesmiddel geeft gaat je score omhoog, het verkeerde
+      geneesmiddel laat je een leven verliezen
     m_Metadata:
       m_Items: []
   - m_Id: 9920415842304
@@ -97,7 +81,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 10016645758976
-    m_Localized: Feminism (dutch)
+    m_Localized: Feminisme
     m_Metadata:
       m_Items: []
   - m_Id: 10065991745536
@@ -110,6 +94,47 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 10113781645312
     m_Localized: Fem Description Dutch
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18425688408064
+    m_Localized: Laat je niet betrappen op lezen
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18459209285632
+    m_Localized: Als de juf zich omdraait...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18476934414336
+    m_Localized: Druk en hou vast om te lezen
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18497012547584
+    m_Localized: Laat los om het boek dicht te doen
+    m_Metadata:
+      m_Items: []
+  - m_Id: 270961112563712
+    m_Localized: 'Tijd:'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 271561300688896
+    m_Localized: Opnieuw
+    m_Metadata:
+      m_Items: []
+  - m_Id: 288373602041856
+    m_Localized: Klaar
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18518583853056
+    m_Localized: Selecteer een voorstel waarvoor Aletta zou pleiten in haar speech
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18545939103744
+    m_Localized: Als je een voorstel kiest dat Aletta ondersteund groeit het publiek
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18567615266816
+    m_Localized: 'Als je een voorstel kiest dat Aletta niet ondersteund krimpt het
+      publiekschrinkt '
     m_Metadata:
       m_Items: []
   references:

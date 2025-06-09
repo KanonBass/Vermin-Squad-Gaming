@@ -4,8 +4,7 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
-
-
+using UnityEngine.Localization.Settings;
 public class turn_page : MonoBehaviour
 {
     [SerializeField] List<Texture2D> _textures;
@@ -76,9 +75,19 @@ public class turn_page : MonoBehaviour
         
     public void UpdateComponents(int i)
     {
-        gameImage.sprite = gameImages[i];
-        title.text = titles[i];
-        description.text = descriptions[i];
+        if (LocalizationSettings.SelectedLocale.LocaleName == "English")
+        {
+            gameImage.sprite = gameImages[i];
+            title.text = titles[i];
+            description.text = descriptions[i];
+        }
+        else
+        {
+            gameImage.sprite = gameImages[i];
+            title.text = titles[i+3];
+            description.text = descriptions[i+3];
+        }
+
     }
     void Update()
     {

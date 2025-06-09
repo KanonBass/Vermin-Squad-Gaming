@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.Localization.Settings;
 
 public class MedicineLifeTracker : MonoBehaviour
 {
@@ -17,13 +18,28 @@ public class MedicineLifeTracker : MonoBehaviour
     void Start()
     {
         currentlives = maxLives;
-        NewTotal?.Invoke("Lives: " + currentlives);
+        if (LocalizationSettings.SelectedLocale.LocaleName == "English")
+        {
+            NewTotal?.Invoke("Lives: " + currentlives);
+        }
+        else
+        {
+            NewTotal?.Invoke("Levens: " + currentlives);
+        }
+
     }
 
     public void LoseLife()
     {
         currentlives--;
-        NewTotal?.Invoke("Lives: " + currentlives);
+        if (LocalizationSettings.SelectedLocale.LocaleName == "English")
+        {
+            NewTotal?.Invoke("Lives: " + currentlives);
+        }
+        else
+        {
+            NewTotal?.Invoke("Levens: " + currentlives);
+        }
         WrongAudio.Play();
 
 

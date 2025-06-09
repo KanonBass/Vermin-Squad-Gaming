@@ -38,24 +38,12 @@ MonoBehaviour:
     m_Localized: Lady's School
     m_Metadata:
       m_Items: []
-  - m_Id: 14039947984896
-    m_Localized: Retry
-    m_Metadata:
-      m_Items: []
-  - m_Id: 15038225891328
-    m_Localized: You cured them!
-    m_Metadata:
-      m_Items: []
-  - m_Id: 15415453204480
-    m_Localized: You failed
-    m_Metadata:
-      m_Items: []
   - m_Id: 15543954096128
     m_Localized: You won!
     m_Metadata:
       m_Items: []
   - m_Id: 15598513602560
-    m_Localized: You lost
+    m_Localized: You lost..
     m_Metadata:
       m_Items: []
   - m_Id: 15801291423744
@@ -67,25 +55,21 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 18346827104256
-    m_Localized: "Patients enter with an issue. You must decide \nthe correct medicine
-      to give them"
+    m_Localized: Patients enter with an issue. You must decide the correct medicine
+      to give them
     m_Metadata:
       m_Items: []
   - m_Id: 18371963568128
-    m_Localized: 'Click and hold on the medicine''s crate to select
-
-      the medicine'
+    m_Localized: Click and hold on the medicine's crate to select the medicine
     m_Metadata:
       m_Items: []
   - m_Id: 18389059551232
-    m_Localized: 'Drag to the patient and release to give them the
-
-      medicine'
+    m_Localized: Drag to the patient and release to give them the medicine
     m_Metadata:
       m_Items: []
   - m_Id: 18406990200832
-    m_Localized: "Giving them the right medicine inscreases your \nscore, the incorrect
-      one makes you lose a life"
+    m_Localized: Giving them the right medicine inscreases your score, the incorrect
+      one makes you lose a life
     m_Metadata:
       m_Items: []
   - m_Id: 9920415842304
@@ -106,6 +90,46 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 10113781645312
     m_Localized: Fem Description
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18425688408064
+    m_Localized: Don't get caught reading
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18459209285632
+    m_Localized: When the teacher turns around...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18476934414336
+    m_Localized: Hold to read book
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18497012547584
+    m_Localized: Release to close book
+    m_Metadata:
+      m_Items: []
+  - m_Id: 270961112563712
+    m_Localized: 'Time taken:'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 271561300688896
+    m_Localized: Retry
+    m_Metadata:
+      m_Items: []
+  - m_Id: 288373602041856
+    m_Localized: Finished
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18518583853056
+    m_Localized: Select an option for Aletta to say during her speech
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18545939103744
+    m_Localized: If you choose something Aletta supports, the crowd grows
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18567615266816
+    m_Localized: If you choose something Aletta doesn't support, the crowd shrinks
     m_Metadata:
       m_Items: []
   references:

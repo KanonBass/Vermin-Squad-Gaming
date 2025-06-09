@@ -16,13 +16,13 @@ MonoBehaviour:
   m_GUID: 2068c42daff0d094096bfca076bfd722
   m_SerializeEntries:
   - m_GUID: 09faa8540f66422469863b9ad5363c4c
-    m_Address: Dutch (Netherlands) (nl-NL)
+    m_Address: Dutch
     m_ReadOnly: 1
     m_SerializedLabels:
     - Locale
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 8c6ac4a01736cc142a341b5d3098c48f
-    m_Address: English (en)
+    m_Address: English
     m_ReadOnly: 1
     m_SerializedLabels:
     - Locale
