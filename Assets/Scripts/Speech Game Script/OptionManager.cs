@@ -6,6 +6,8 @@ using UnityEngine.UI;
 using TMPro;
 using UnityEngine.SceneManagement;
 using Unity.Mathematics;
+using UnityEngine.Localization.Settings;
+
 
 public class OptionManager : MonoBehaviour
 {
@@ -71,7 +73,14 @@ public class OptionManager : MonoBehaviour
 
             options[i].GetComponent<AnswerScript>().isCorrect = false;
             options[i].transform.GetChild(0).GetComponent<Image>().sprite = OnA[currentOption].Answers[randomAnswer];
-            options[i].transform.GetChild(1).GetComponent<TMP_Text>().text = OnA[currentOption].Descriptions[randomAnswer];
+            if (LocalizationSettings.SelectedLocale.LocaleName == "English")
+            {
+                options[i].transform.GetChild(1).GetComponent<TMP_Text>().text = OnA[currentOption].Descriptions[randomAnswer]; //freyapoop
+            }
+            else
+            {
+                options[i].transform.GetChild(1).GetComponent<TMP_Text>().text = OnA[currentOption].Descriptions[randomAnswer+3]; //freyapiss
+            }
 
 
 

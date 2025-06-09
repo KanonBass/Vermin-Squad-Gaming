@@ -1,22 +1,48 @@
 using UnityEditor;
 using UnityEngine;
 
+using UnityEngine.Localization.Settings;
+
 public class RedMenuScript : EndMenu
 {
     public void UpdateTime(float time)
+
     {
-        secondaryText.text = "Time Taken: " + Mathf.Round(time * 10.0f) * 0.1f + "s";
+        if (LocalizationSettings.SelectedLocale.LocaleName == "English") //freyapoop
+        {
+            secondaryText.text = "Time Taken: " + Mathf.Round(time * 10.0f) * 0.1f + "s";
+        }
+        else
+        {
+            secondaryText.text = "Tijd: " + Mathf.Round(time * 10.0f) * 0.1f + "s";
+        }
     }
 
     public void UpdateMainText(bool didWin)
     {
-        if (didWin)
+
+        if (LocalizationSettings.SelectedLocale.LocaleName == "English")
+
         {
-            primaryText.text = "You Win!";
+            if (didWin)
+            {
+                primaryText.text = "You Win!";
+            }
+            else
+            {
+                primaryText.text = "Caught!";
+            }
         }
         else
         {
-            primaryText.text = "Caught!";
+            if (didWin)
+            {
+                primaryText.text = "Gewonnen!";
+            }
+            else
+            {
+                primaryText.text = "Betrapt!";
+            }
         }
     }
 }

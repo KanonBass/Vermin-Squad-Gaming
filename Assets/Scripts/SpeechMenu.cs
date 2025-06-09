@@ -1,17 +1,34 @@
 using UnityEngine;
+using UnityEngine.Localization.Settings;
+
 
 public class SpeechMenu : EndMenu
 {
     public void ChangeMainText(bool isWin)
     {
-        if (isWin)
+        if (LocalizationSettings.SelectedLocale.LocaleName == "English")
         {
-            primaryText.text = "You Win!";
+            if (isWin)
+            {
+                primaryText.text = "You Win!";
+            }
+            else
+            {
+                primaryText.text = "You Lose!";
+            }
         }
         else
         {
-            primaryText.text = "You Lose!";
+            if (isWin)
+            {
+                primaryText.text = "Gewonnen!";
+            }
+            else
+            {
+                primaryText.text = "Verloren!";
+            }
         }
+            
     }
 
     public void ChangeSecondText(string time)
