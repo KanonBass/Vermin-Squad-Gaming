@@ -1,3 +1,4 @@
+using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.InputSystem;
@@ -44,6 +45,7 @@ public class LightScoreScript : ScoreTracker
             Book.SetActive(false);
             OpenBook.SetActive(true);
             Bookparticles.SetActive(true);
+            
         }
         else if(GetScore() > GetMinScore()) 
         {
@@ -51,7 +53,9 @@ public class LightScoreScript : ScoreTracker
             Book.SetActive(true);
             OpenBook.SetActive(false);
             Bookparticles.SetActive(false);
+            
         }
+     
 
         //This is called every frame to send out the current proportion of the score to the score bar, which is then filled based on this proportion
         scoreUpdate?.Invoke(GetScore()/GetMaxScore());
