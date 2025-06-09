@@ -81,15 +81,19 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 10065991745536
-    m_Localized: Lady description
+    m_Localized: I was forced to study at lady's school but wanted to learn medicine.\n\nHelp
+      me study in class and avoid the teacher's sight
     m_Metadata:
       m_Items: []
   - m_Id: 10095557394432
-    m_Localized: Med Description
+    m_Localized: I was a physician who helped women with illnesses, cleanliness,
+      and Injuries.\n\nHelp me cure my patients of thier issues!
     m_Metadata:
       m_Items: []
   - m_Id: 10113781645312
-    m_Localized: Fem Description
+    m_Localized: In my later years I was a feminist. I gave speeches to help spread
+      my progressive ideas.\n\nSelect options I would support to help me gather a
+      crowd!
     m_Metadata:
       m_Items: []
   - m_Id: 18425688408064

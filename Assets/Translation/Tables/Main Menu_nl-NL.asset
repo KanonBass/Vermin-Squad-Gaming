@@ -85,15 +85,19 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 10065991745536
-    m_Localized: Lady Description (dutch)
+    m_Localized: Ik was geforceerd om naar meisjesschool te gaan.\n\nHelp mij stiekem
+      geneeskunde leren en wordt niet betrapt door de juf!
     m_Metadata:
       m_Items: []
   - m_Id: 10095557394432
-    m_Localized: Med Description (dutch)
+    m_Localized: Ik was een huisart die vrouwen hielp met ziektes, netheid en verwondingen.\n\nHelp
+      mij met het genezen van patienten!
     m_Metadata:
       m_Items: []
   - m_Id: 10113781645312
-    m_Localized: Fem Description Dutch
+    m_Localized: 'In mijn latere jaren gaf ik feministische speeches. Ik verspreidde
+      hier mijn progressieve ideeen.\n\nSelecteer opties die ik zou steunen om mij
+      te helpen een publiek te verzamelen! '
     m_Metadata:
       m_Items: []
   - m_Id: 18425688408064
