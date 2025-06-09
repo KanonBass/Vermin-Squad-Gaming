@@ -1,0 +1,149 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b11a58205ec3474ca216360e9fa74a8, type: 3}
+  m_Name: Main Menu Shared Data
+  m_EditorClassIdentifier: 
+  m_TableCollectionName: Main Menu
+  m_TableCollectionNameGuidString: 485988e5af3b51e4c986e488bbcae9c6
+  m_Entries:
+  - m_Id: 59145764864
+    m_Key: PlayKey
+    m_Metadata:
+      m_Items: []
+  - m_Id: 171163041792
+    m_Key: ReturnKey
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1694655889408
+    m_Key: GameTitleKey
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1872901226496
+    m_Key: QuitKey
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9781726986240
+    m_Key: LadyTitle
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9920415842304
+    m_Key: MedicalTitle
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10016645758976
+    m_Key: FeminismTitle
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10065991745536
+    m_Key: LadyDesc
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10095557394432
+    m_Key: MedicalDesc
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10113781645312
+    m_Key: FeminismDesc
+    m_Metadata:
+      m_Items: []
+  - m_Id: 14039947984896
+    m_Key: RetryKey
+    m_Metadata:
+      m_Items: []
+  - m_Id: 15038225891328
+    m_Key: MedicalWin
+    m_Metadata:
+      m_Items: []
+  - m_Id: 15415453204480
+    m_Key: MedicalLose
+    m_Metadata:
+      m_Items: []
+  - m_Id: 15543954096128
+    m_Key: LadyWin
+    m_Metadata:
+      m_Items: []
+  - m_Id: 15598513602560
+    m_Key: LadyLose
+    m_Metadata:
+      m_Items: []
+  - m_Id: 15801291423744
+    m_Key: 'SpeechWin
+
+'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 15841187643392
+    m_Key: SpeechLose
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18346827104256
+    m_Key: 'MedicalTut1
+
+'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18371963568128
+    m_Key: MedicalTut2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18389059551232
+    m_Key: MedicalTut3
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18406990200832
+    m_Key: MedicalTut4
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18425688408064
+    m_Key: LadyTut1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18459209285632
+    m_Key: LadyTut2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18476934414336
+    m_Key: LadyTut3
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18497012547584
+    m_Key: LadyTut4
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18518583853056
+    m_Key: SpeechTut1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18545939103744
+    m_Key: SpeechTut2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18567615266816
+    m_Key: SpeechTut3
+    m_Metadata:
+      m_Items: []
+  m_Metadata:
+    m_Items:
+    - rid: 5829896725215052039
+  m_KeyGenerator:
+    rid: 5829896725215052037
+  references:
+    version: 2
+    RefIds:
+    - rid: 5829896725215052037
+      type: {class: DistributedUIDGenerator, ns: UnityEngine.Localization.Tables, asm: Unity.Localization}
+      data:
+        m_CustomEpoch: 1749427857379
+    - rid: 5829896725215052039
+      type: {class: PreloadAssetTableMetadata, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_PreloadBehaviour: 1
