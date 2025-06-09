@@ -9,6 +9,7 @@ public class LightTeacher : MonoBehaviour
 {
     [SerializeField] public AudioSource SpeakingAudio;
     [SerializeField] public AudioSource TurnAudio;
+    
 
 
     /// <summary>
