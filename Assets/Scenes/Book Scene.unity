@@ -1768,6 +1768,7 @@ GameObject:
   - component: {fileID: 1200233321}
   - component: {fileID: 1200233320}
   - component: {fileID: 1200233319}
+  - component: {fileID: 1200233322}
   m_Layer: 5
   m_Name: Next page
   m_TagString: Untagged
@@ -1890,6 +1891,60 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1200233317}
   m_CullTransparentMesh: 1
+--- !u!114 &1200233322
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1200233317}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56eb0353ae6e5124bb35b17aff880f16, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_StringReference:
+    m_TableReference:
+      m_TableCollectionName: 
+    m_TableEntryReference:
+      m_KeyId: 0
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  m_FormatArguments: []
+  m_UpdateString:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1954981203}
+        m_TargetAssemblyTypeName: UnityEngine.Localization.Components.LocalizeStringEvent,
+          Unity.Localization
+        m_MethodName: SetEntry
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 2111915665}
+        m_TargetAssemblyTypeName: UnityEngine.Localization.Components.LocalizeStringEvent,
+          Unity.Localization
+        m_MethodName: SetEntry
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  references:
+    version: 2
+    RefIds: []
 --- !u!1 &1271826035
 GameObject:
   m_ObjectHideFlags: 0
@@ -3453,6 +3508,7 @@ GameObject:
   - component: {fileID: 1954981202}
   - component: {fileID: 1954981201}
   - component: {fileID: 1954981203}
+  - component: {fileID: 1954981204}
   m_Layer: 5
   m_Name: Title EN
   m_TagString: Untagged
@@ -3618,6 +3674,18 @@ MonoBehaviour:
   references:
     version: 2
     RefIds: []
+--- !u!114 &1954981204
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1954981199}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5622c1cf7c7d5d54099680a089e01c08, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2029555184
 GameObject:
   m_ObjectHideFlags: 0
@@ -3720,6 +3788,7 @@ GameObject:
   - component: {fileID: 2111915662}
   - component: {fileID: 2111915664}
   - component: {fileID: 2111915663}
+  - component: {fileID: 2111915665}
   m_Layer: 5
   m_Name: Body Text EN
   m_TagString: Untagged
@@ -3846,6 +3915,46 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2111915661}
   m_CullTransparentMesh: 1
+--- !u!114 &2111915665
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2111915661}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56eb0353ae6e5124bb35b17aff880f16, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_StringReference:
+    m_TableReference:
+      m_TableCollectionName: GUID:485988e5af3b51e4c986e488bbcae9c6
+    m_TableEntryReference:
+      m_KeyId: 10113781645312
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  m_FormatArguments: []
+  m_UpdateString:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 2111915663}
+        m_TargetAssemblyTypeName: TMPro.TMP_Text, Unity.TextMeshPro
+        m_MethodName: set_text
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  references:
+    version: 2
+    RefIds: []
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
