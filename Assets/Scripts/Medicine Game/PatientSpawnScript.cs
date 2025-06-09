@@ -85,9 +85,9 @@ public class PatientSpawnScript : MonoBehaviour
     /// </summary>
     private void Start()
     {
-        SpawnPatient(0);
-        SpawnPatient(1);
-        SpawnPatient(2);
+        SpawnPatient(0,1);
+        SpawnPatient(1,0);
+        SpawnPatient(2,2);
     }
 
     /// <summary>
@@ -98,7 +98,7 @@ public class PatientSpawnScript : MonoBehaviour
     //Sets a patient count counter, this counter counts the count of spawned patients (that can probably be counts)
     int PatientCount = 0;
     int PatientLeft = 0;
-    public Patient SpawnPatient(int newDestination)
+    public Patient SpawnPatient(int newDestination, int index)
     {
         Patient newPatient = new Patient();
 
@@ -118,15 +118,24 @@ public class PatientSpawnScript : MonoBehaviour
             newPatient.returnPoint = rightSpawn;
         }
 
+        int spawnNumber;
+
         //randomly generates which patient from the patientTypes array should be spawned and trakcs that number
-        int spawnNumber = UnityEngine.Random.Range(0, patientTypes.Length);
-
-
+        if (index == -1)
+        {
+            spawnNumber = UnityEngine.Random.Range(0, patientTypes.Length);
+        }
+        else
+        {
+            spawnNumber = index;
+        }
+        
+        
         //These update all of the different pieces of information the patient needs
         newPatient.illness = patientTypes[spawnNumber].illness;
         if (PatientCount > 2)
         {
-            newPatient.maxTime = defaultMaxTime - (Mathf.Sqrt(currentSpeed * maxTimeSpeedMultiplier));
+            newPatient.maxTime = math.max(defaultMaxTime - (Mathf.Sqrt(currentSpeed * maxTimeSpeedMultiplier)), 4);
             Debug.Log("Max time: " + newPatient.maxTime);
         }
         else
@@ -134,7 +143,7 @@ public class PatientSpawnScript : MonoBehaviour
             newPatient.maxTime = 999999;
         }
 
-        newPatient.velocity = baseVelocity + (Mathf.Sqrt(currentSpeed * velocitySpeedMultiplier));
+        newPatient.velocity = math.min(baseVelocity + (Mathf.Sqrt(currentSpeed * velocitySpeedMultiplier)), 15);
         Debug.Log("Velocity: " + newPatient.velocity);
         newPatient.acceleration = newPatient.velocity * 2;
 
@@ -189,22 +198,22 @@ public class PatientSpawnScript : MonoBehaviour
             {
                 if (returnedPatient.destinationPoint.x == leftPoint.transform.position.x)
                 {
-                    SpawnPatient(0);
+                    SpawnPatient(0,-1);
                 }
                 else if (returnedPatient.destinationPoint.x == leftPoint.transform.position.x + xPatientDistance)
                 {
-                    SpawnPatient(1);
+                    SpawnPatient(1,-1);
                 }
                 else
                 {
-                    SpawnPatient(2);
+                    SpawnPatient(2,-1);
                 }
             }
             else if (PatientLeft == 3)
             {
-                SpawnPatient(0);
-                SpawnPatient(1);
-                SpawnPatient(2);
+                SpawnPatient(0,-1);
+                SpawnPatient(1,-1);
+                SpawnPatient(2,-1);
             }
             
         }

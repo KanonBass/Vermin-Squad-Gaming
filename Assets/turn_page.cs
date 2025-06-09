@@ -26,6 +26,13 @@ public class turn_page : MonoBehaviour
         _book_menu_1.texture = _textures[index];
     }
 
+    public void StartClick()
+    {
+        _book_menu_1.texture = _textures[0];
+        UpdateComponents(0);
+        index = 0;
+    }
+
     public void pregress()
     {
         index = Mathf.Clamp(index + 1, minIndex, maxIndex);
